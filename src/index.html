@@ -4,17 +4,26 @@
 <head>
 	<link rel="stylesheet" href="styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="scripts/loader.js"></script>
 	<title>инт20х</title>
 	<meta charset="utf-8">
 </head>
 
-<body>
+<body onload="loadCompleted()">
+	<div class="loader">
+		<div class="main__logo">
+			<img src="images/logo.png" />
+		</div>
+	</div>
+
 	<div class="container">
 		<div class="main">
-			<div class="main__logo">
+			<div class="main__logo" data-aos="fade-left">
 				<img src="images/logo.png" />
 			</div>
-			<div class="main__description">
+			<div class="main__description" data-aos="fade-right">
 				<img src="images/Group 4.png" />
 			</div>
 		</div>
@@ -70,17 +79,17 @@
 				</div>
 				<div class="categories__list">
 					<div class="categories__element">
-						<img src="images/datascience.png" />
-						<span>Data Science</span>
-					</div>
-					<!-- <div class="categories__element">
-						<img src="images/datascience.png" />
-						Data Science
+						<img src="images/web.png" />
+						<span>Web development</span>
 					</div>
 					<div class="categories__element">
 						<img src="images/datascience.png" />
-						Data Science
-					</div> -->
+						<span>Data Science</span>
+					</div>
+					<div class="categories__element">
+						<img src="images/mobile.png" />
+						<span>Mobile development</span>
+					</div>
 				</div>
 			</div>
 		</div>

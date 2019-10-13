@@ -8,8 +8,17 @@ body {
 img {
   width: 100%; }
 
-.container {
+.loader {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: ease-in-out; }
+  .loader .main__logo {
+    animation: logoZoom 1.5s infinite; }
+
+.container {
+  display: none;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -106,24 +115,45 @@ img {
     width: 300px; }
   .categories .categories__body {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
   .categories .categories__red-figure {
     position: relative;
-    right: -25vw; }
+    transition: all 0.5s; }
+    .categories .categories__red-figure img {
+      height: 50vh; }
   .categories .categories__blue-figure {
     position: relative;
-    right: 15vw; }
+    transition: all 0.5s;
+    top: -50vh; }
+    .categories .categories__blue-figure img {
+      height: 50vh; }
+  .categories .categories__body:hover .categories__blue-figure {
+    transform: rotate(-5deg); }
+  .categories .categories__body:hover .categories__red-figure {
+    transform: rotate(5deg); }
   .categories .categories__list {
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 50vw; }
+    top: -90vh; }
     .categories .categories__list .categories__element {
       display: flex;
       font-size: 45px;
       line-height: 53px;
       color: #FFFFFF; }
+    .categories .categories__list span {
+      padding-top: 30px; }
     .categories .categories__list img {
       max-width: 130px; }
+
+@keyframes logoZoom {
+  0% {
+    width: 33%; }
+  50% {
+    width: 40%; }
+  100% {
+    width: 33%; } }
+@keyframes;
 
 /*# sourceMappingURL=style.css.map */
