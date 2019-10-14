@@ -93,7 +93,7 @@ img {
   text-align: center;
   position: relative;
   width: 100%;
-  height: 10%; }
+  height: 80px; }
 
 .title::before {
   content: "";
@@ -101,22 +101,24 @@ img {
   background: linear-gradient(to right bottom, transparent 49.5%, #5d00f0 50%) left/100% no-repeat;
   position: absolute;
   bottom: 100%;
-  left: 12px;
-  right: 2px; }
+  left: 0px;
+  right: 0px; }
 
 .categories {
   display: flex;
   height: 100vh;
   width: 100%;
   background-color: #5d00f0;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 0 200px; }
   .categories .categories__header {
     display: flex;
-    width: 300px; }
+    width: 30%; }
   .categories .categories__body {
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    height: 50vh; }
   .categories .categories__red-figure {
     position: relative;
     transition: all 0.5s; }
@@ -142,10 +144,30 @@ img {
       font-size: 45px;
       line-height: 53px;
       color: #FFFFFF; }
+    .categories .categories__list .categories__header {
+      display: flex;
+      width: 300px; }
     .categories .categories__list span {
       padding-top: 30px; }
     .categories .categories__list img {
       max-width: 130px; }
+
+.afterCategory {
+  display: flex;
+  background-color: #10A9DF;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 10%; }
+
+.afterCategory::before {
+  content: "";
+  padding-bottom: 8%;
+  background: linear-gradient(to left bottom, transparent 49.5%, #10A9DF 50%) left/100% no-repeat;
+  position: absolute;
+  bottom: 100%;
+  left: 0px;
+  right: 0px; }
 
 @keyframes logoZoom {
   0% {
@@ -154,6 +176,8 @@ img {
     width: 40%; }
   100% {
     width: 33%; } }
-@keyframes;
+svg {
+  height: 240px;
+  width: 700px; }
 
 /*# sourceMappingURL=style.css.map */
