@@ -6,8 +6,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="scripts/timer.js"></script>
 	<script src="scripts/loader.js"></script>
-	<!-- <script src="scripts/timer.js"></script> -->
 	<title>инт20х</title>
 	<meta charset="utf-8">
 </head>
@@ -47,7 +47,7 @@
 					</div>
 					<div class="about-project__column">
 		<div class="about-project__timer">
-			<svg>
+			<svg id ="mysvg">
 				<path fill="#4300AC"
 					d="M20,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
 				<path fill="#10A9DF"
@@ -55,8 +55,8 @@
 					d="M20,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
 				<path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
 				<path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="90" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">130</text>
-				<text x="90" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
+				<text id="timer__days__number" x="85" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">130</text>
+				<text x="85" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
 
 				<path fill="#4300AC"
 					d="M190,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
@@ -65,8 +65,8 @@
 					d="M190,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
 				<path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
 				<path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="260" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">6</text>
-				<text x="260" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
+				<text id="timer__hours__number" x="255" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">6</text>
+				<text x="255" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
 
 				<path fill="#4300AC"
 					d="M360,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
@@ -75,8 +75,8 @@
 					d="M360,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
 				<path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
 				<path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="430" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
-				<text x="430" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
+				<text id="timer__minutes__number" x="425" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
+				<text x="425" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
 
 				<path fill="#4300AC"
 					d="M530,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
@@ -85,8 +85,8 @@
 					d="M530,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
 				<path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
 				<path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="600" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
-				<text x="600" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
+				<text id="timer__seconds__number" x="595" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
+				<text x="595" y="210" text-anchor="middle" font-size="20" fill="white">Секунд</text>
 			</svg>
 		</div>
 	</div>
