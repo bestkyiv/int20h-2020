@@ -1,4 +1,5 @@
 @import "variables";
+@import "cube";
 
 body {
   background-color: $background;
@@ -23,7 +24,6 @@ img {
     //animation-direction: alternate-reverse;
   }
 }
-
 
 .container {
   display: none;
@@ -148,11 +148,27 @@ img {
   flex-direction: column;
   padding: 0 200px;
 
-  .categories__header {
+  
+  .categories__header__white {
+    color:#FFFFFF;
+  }
+  
+  .categories__header__blue {
+    color: #62E3FF;
+  }
+  
+  .categories__header__orange {
+    color:#FFB4B4;
+  }
+  .categories__header{
+    font-style: normal;
+    font-weight: bold;
+    line-height: 117px;
     display: flex;
+    font-size: 100px;
     width: 30%;
   }
-
+  
   .categories__body {
     display: flex;
     align-items: center;
@@ -163,26 +179,25 @@ img {
   .categories__red-figure {
     position: relative;
     transition: all 0.5s;
-     img {
-       height: 50vh;
-      
-     }
+    img {
+      height: 60vh;
+    }
   }
 
   .categories__blue-figure {
     position: relative;
     transition: all 0.5s;
-    top: -50vh;
+    top: -60vh;
     img {
-      height: 50vh;
+      height: 60vh;
     }
   }
-  
-  .categories__body:hover .categories__blue-figure{
+
+  .categories__body:hover .categories__blue-figure {
     transform: rotate(-5deg);
   }
 
-  .categories__body:hover .categories__red-figure{
+  .categories__body:hover .categories__red-figure {
     transform: rotate(5deg);
   }
 
@@ -190,13 +205,13 @@ img {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -90vh;
+    bottom: 105vh;
     .categories__element {
       display: flex;
-      
+
       font-size: 45px;
       line-height: 53px;
-      color: #FFFFFF;
+      color: #ffffff;
     }
 
     .categories__header {
@@ -207,16 +222,16 @@ img {
     span {
       padding-top: 30px;
     }
-     img {
-         max-width: 130px;
-     }
+    img {
+      max-width: 130px;
+    }
   }
 }
 
 .afterCategory {
   display: flex;
   //padding: 5% 0;
-  background-color: #10A9DF;
+  background-color: #10a9df;
   text-align: center;
   position: relative;
   width: 100%;
@@ -226,7 +241,7 @@ img {
 .afterCategory::before {
   content: "";
   padding-bottom: 8%;
-  background: linear-gradient(to left bottom, transparent 49.5%, #10A9DF 50%) left / 100% no-repeat;
+  background: linear-gradient(to left bottom, transparent 49.5%, #10a9df 50%) left / 100% no-repeat;
   //border-radius: 2px;
   position: absolute;
   bottom: 100%;
@@ -234,17 +249,68 @@ img {
   right: 0px;
 }
 
-
-
 @keyframes logoZoom {
-0% { width: 33%; }
-50% { width: 40%; }
-100% { width: 33%; }
+  0% {
+    width: 33%;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 33%;
+  }
 }
 
-//@keyframes 
+//@keyframes
 
 svg {
   height: 240px;
   width: 700px;
+}
+
+.memories {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  
+  .memories__header {
+    display: flex;
+    padding: 200px;
+  }
+
+  .memories__cube {
+    display: flex;
+    padding: 200px;
+  }
+
+  .memories__arrow {
+    transition: all .2s ease-in-out; 
+  }
+
+  .memories__arrow:hover {
+    transform: scale(1.1);
+  }
+}
+
+input[name='select-face'] {
+  display: none;
+}
+
+.gifts {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 200px;
+
+  .gifts__header {
+    display: flex;
+    width: 600px;
+  }
+
+  .gifts__body {
+    display: flex;
+  }
 }

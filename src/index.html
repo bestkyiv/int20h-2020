@@ -8,18 +8,19 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="scripts/timer.js"></script>
 	<script src="scripts/loader.js"></script>
+	<script src="scripts/animateCube.js"></script>
 	<title>инт20х</title>
 	<meta charset="utf-8">
 </head>
 
 <body onload="loadCompleted()">
 
-<!-- <body> -->
+	<!-- <body> -->
 	<div class="loader">
 		<div class="main__logo">
 			<img src="images/logo.png" />
 		</div>
-	</div> 
+	</div>
 
 	<div class="container">
 		<div class="main">
@@ -46,50 +47,50 @@
 
 					</div>
 					<div class="about-project__column">
-		<div class="about-project__timer">
-			<svg id ="mysvg">
-				<path fill="#4300AC"
-					d="M20,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M20,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text id="timer__days__number" x="85" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">130</text>
-				<text x="85" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
+						<div class="about-project__timer">
+							<svg id="mysvg">
+								<path fill="#4300AC"
+									d="M20,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+								<path fill="#10A9DF" stroke="white" stroke-width="2px"
+									d="M20,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+								<path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+								<path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+								<text id="timer__days__number" x="85" y="115" text-anchor="middle" font-size="45"
+									fill="red" stroke="red">130</text>
+								<text x="85" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
 
-				<path fill="#4300AC"
-					d="M190,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M190,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text id="timer__hours__number" x="255" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">6</text>
-				<text x="255" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
+								<path fill="#4300AC"
+									d="M190,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+								<path fill="#10A9DF" stroke="white" stroke-width="2px"
+									d="M190,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+								<path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+								<path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+								<text id="timer__hours__number" x="255" y="115" text-anchor="middle" font-size="45"
+									fill="red" stroke="red">6</text>
+								<text x="255" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
 
-				<path fill="#4300AC"
-					d="M360,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M360,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text id="timer__minutes__number" x="425" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
-				<text x="425" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
+								<path fill="#4300AC"
+									d="M360,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+								<path fill="#10A9DF" stroke="white" stroke-width="2px"
+									d="M360,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+								<path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+								<path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+								<text id="timer__minutes__number" x="425" y="115" text-anchor="middle" font-size="45"
+									fill="red" stroke="red">30</text>
+								<text x="425" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
 
-				<path fill="#4300AC"
-					d="M530,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M530,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text id="timer__seconds__number" x="595" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
-				<text x="595" y="210" text-anchor="middle" font-size="20" fill="white">Секунд</text>
-			</svg>
-		</div>
-	</div>
+								<path fill="#4300AC"
+									d="M530,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+								<path fill="#10A9DF" stroke="white" stroke-width="2px"
+									d="M530,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+								<path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+								<path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+								<text id="timer__seconds__number" x="595" y="115" text-anchor="middle" font-size="45"
+									fill="red" stroke="red">30</text>
+								<text x="595" y="210" text-anchor="middle" font-size="20" fill="white">Секунд</text>
+							</svg>
+						</div>
+					</div>
 				</div>
 				<div class="about-project__body">
 					<div class="about-project__column">
@@ -108,7 +109,15 @@
 		<span class="title"></span>
 		<div class="categories">
 			<div class="categories__header">
-				<img src="images/categories.png" />
+				<div class="categories__header__white">
+					Категорії
+				</div>
+				<div class="categories__header__orange">
+					Категорії
+				</div>
+				<div class="categories__header__blue">
+					Категорії
+				</div>
 			</div>
 			<div class="categories__body">
 				<div class="categories__red-figure">
@@ -133,53 +142,53 @@
 				</div>
 			</div>
 		</div>
+		<span class="afterCategory"></span>
 	</div>
-	<span class="afterCategory"></span>
-	<!-- <div class="about-project__column">
-		<div class="about-project__timer">
-			<svg>
-				 <path fill="#4300AC"
-					d="M30,10 h140 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M30,20 h140 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="100" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">130</text>
-				<text x="100" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
-
-				<path fill="#4300AC"
-					d="M210,10 h140 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M210,20 h140 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="280" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">6</text>
-				<text x="280" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
-
-				<path fill="#4300AC"
-					d="M390,10 h140 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M390,20 h140 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="460" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
-				<text x="460" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
-
-				<path fill="#4300AC"
-					d="M570,10 h140 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-				<path fill="#10A9DF"
-					stroke="white" stroke-width="2px"
-					d="M570,20 h140 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-140 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-				<path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-				<path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-				<text x="640" y="115" text-anchor="middle" font-size="45" fill="red" stroke="red">30</text>
-				<text x="640" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
-			</svg>
+	<div class="gifts">
+		<div class="gifts__header">
+			<img src="images/fg.png">
 		</div>
-	</div> -->
+		<div class="gifts__body">
+			
+		</div>
+
+	</div>
+
+	<div class="memories">
+		<div class="memories__header">
+			<img src="images/Що отримують учасники заголовок.png"/>
+		</div>
+		<div class="memories__arrow">
+			<img src="images/arrow-left.png">
+		</div>
+		<div class="memories__cube">
+			<input type="radio" checked id="radio-front" name="select-face" />
+			<input type="radio" id="radio-left" name="select-face" />
+			<input type="radio" id="radio-right" name="select-face" />
+			<input type="radio" id="radio-top" name="select-face" />
+			<input type="radio" id="radio-bottom" name="select-face" />
+			<input type="radio" id="radio-back" name="select-face" />
+
+			<div class="space3d">
+
+
+				<div class="_3dbox">
+					<div class="_3dface _3dface--front"></div>
+					<div class="_3dface _3dface--top"></div>
+					<div class="_3dface _3dface--bottom"></div>
+					<div class="_3dface _3dface--left"></div>
+					<div class="_3dface _3dface--right"></div>
+					<div class="_3dface _3dface--back"></div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div class="memories__arrow">
+			<img src="images/arrow-right.png">
+		</div>
+	</div>
 </body>
 
 </html>
