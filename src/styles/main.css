@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  height: 100vh; }
+
+.main__logo {
+  display: flex;
+  max-width: 620px;
+  width: 50%;
+  padding: 140px; }
+  .main__logo img {
+    width: 100%; }
+
+.main__description {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 440px 140px 140px 140px; }
+
+.main__dates {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 82px;
+  color: #4300ac; }
+
+.main__place {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  color: #4300ac; }
+
+.main__registration {
+  padding: 30px;
+  width: 460px; }
+
+.main__registration a {
+  opacity: 0;
+  width: 500px;
+  font-size: 40px;
+  line-height: 47px;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  top: -375px;
+  left: 55px;
+  animation-delay: 3s;
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+.main__registration__blue {
+  width: 0px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  animation-delay: 1s;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
+
+.main__registration__blue img {
+  position: absolute;
+  width: 450px;
+  transition: all 0.8s cubic-bezier(0.21, 0.8, 0.59, 0.92); }
+
+.main__registration__red {
+  width: 0px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  top: -190px;
+  left: 15px;
+  animation-delay: 1.5s;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
+
+.main__registration__red img {
+  position: absolute;
+  width: 450px;
+  transition: all 0.8s cubic-bezier(0.21, 0.8, 0.59, 0.92); }
+
+@media (max-width: 1550px) {
+  .main__logo {
+    padding: 0px; }
+
+  .main__description {
+    padding-top: 440px 0px 0px 0px; } }
+@media (max-width: 1300px) {
+  .main {
+    flex-direction: column;
+    flex-wrap: nowrap; }
+
+  .main__logo {
+    padding-top: 500px; }
+
+  .main__description {
+    padding-top: 100px; } }
+
+/*# sourceMappingURL=main.css.map */
