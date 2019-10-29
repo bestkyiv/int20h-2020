@@ -1,0 +1,30 @@
+.memories {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  
+    .memories__header {
+      display: flex;
+      padding: 200px;
+    }
+  
+    .memories__cube {
+      display: flex;
+      padding: 200px;
+    }
+  
+    .memories__arrow {
+      transition: all 0.2s ease-in-out;
+    }
+  
+    .memories__arrow:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  input[name="select-face"] {
+    display: none;
+  }

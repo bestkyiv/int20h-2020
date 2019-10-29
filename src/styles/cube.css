@@ -78,27 +78,27 @@
   transform: rotateY(180deg); }
 
 ._3dface--front {
-  background: url(../images/47952270947_f6293fef3c_o\ 1.jpg);
+  background: url(../images/cube/1.png);
   background-size: 100%; }
 
 ._3dface--left {
-  background: url(../images/40251173343_84f4aca1c0_o.png);
+  background: url(../images/cube/2.png);
   background-size: auto 100%; }
 
 ._3dface--right {
-  background: url(../images/1.png);
+  background: url(../images/cube/3.png);
   background-size: auto 100%; }
 
 ._3dface--top {
-  background: url(../images/47952270947_f6293fef3c_o\ 1.jpg);
+  background: url(../images/cube/4.png);
   background-size: auto 100%; }
 
 ._3dface--bottom {
-  background: url(../images/47952270947_f6293fef3c_o\ 1.jpg);
+  background: url(../images/cube/5.png);
   background-size: auto 100%; }
 
 ._3dface--back {
-  background: url(../images/47952270947_f6293fef3c_o\ 1.jpg);
+  background: url(../images/cube/6.png);
   background-size: auto 100%; }
 
 /*# sourceMappingURL=cube.css.map */

@@ -1,7 +1,7 @@
 function loadCompleted() {
     
     console.log('completed');
-    test = setTimeout(showContainer, 0);
+    test = setTimeout(showContainer, 3000);
 }
 
 function showContainer() {
