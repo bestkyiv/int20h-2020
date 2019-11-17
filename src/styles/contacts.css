@@ -15,11 +15,9 @@
   background-color: #f43838;
   width: 100%; }
 
-.contacts__body {
+.contacts__section-slider {
   display: flex;
-  background: #10a9df;
-  padding: 80px 140px;
-  justify-content: center; }
+  background: #10a9df; }
 
 .contacts__section {
   display: flex;
@@ -30,7 +28,8 @@
     height: 427px; }
 
 .contacts__section-block {
-  background: #dadada;
+  background: #F43838;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,7 +41,7 @@
     font-size: 32px;
     line-height: 35px;
     display: flex;
-    color: #10a9df;
+    color: #FFFFFF;
     margin: 5px 0; }
   .contacts__section-block h4 {
     font-family: Roboto Condensed;
@@ -51,7 +50,7 @@
     font-size: 25px;
     line-height: 35px;
     display: flex;
-    color: #10a9df;
+    color: #FFFFFF;
     margin: 5px 0; }
 
 /*# sourceMappingURL=contacts.css.map */
