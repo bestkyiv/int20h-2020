@@ -19,7 +19,7 @@
 }
 
 .contacts__section-slider {
-  display: flex;
+  //display: flex;
   background: #10a9df;
   // padding: 80px 140px;
   // justify-content: center;
@@ -27,12 +27,13 @@
 
 .contacts__section {
   display: flex;
-  padding: 0 60px;
+  //padding: 0 60px;
   flex-direction: column;
 
   img {
-    width: 427px;
-    height: 427px;
+    //width: 427px;
+    //height: 427px;
+    width: 100%;
   }
 }
 

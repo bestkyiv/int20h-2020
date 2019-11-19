@@ -2,448 +2,437 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" type="text/css" href="scripts/slick-1.8.1/slick/slick.css">
-	<link rel="stylesheet" href="scripts/slick-1.8.1/slick/slick-theme.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script src="scripts/jquery-3.4.1.min.js"></script>
-	<script src="scripts/slick-1.8.1/slick/slick.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<!-- <script src="scripts/timer.js"></script> -->
-	<script src="scripts/loader.js"></script>
-	<!-- <script src="scripts/animateCube.js"></script> -->
-	<script src="scripts/gifts.js"></script>
-	<title>инт20х</title>
-	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="scripts/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="scripts/slick-1.8.1/slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/slick-1.8.1/slick/slick.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="scripts/timer.js"></script> -->
+    <script src="scripts/loader.js"></script>
+    <!-- <script src="scripts/animateCube.js"></script> -->
+    <script src="scripts/gifts.js"></script>
+
+
+    <title>инт20х</title>
+    <meta charset="utf-8">
 </head>
 
 <body onload="loadCompleted()">
 
-	<!-- <body> -->
-	<div class="loader">
-		<div class="main__logo">
-			<img src="images/logo.png" />
-		</div>
-	</div>
+<!-- <body> -->
+<div class="loader">
+    <div class="main__logo">
+        <img src="images/logo.png"/>
+    </div>
+</div>
 
-	<div class="container">
-		<div class="main">
-			<div class="main__logo" data-aos="fade-left" data-aos-duration="1500">
-				<img src="images/logo.png" />
-			</div>
-			<div class="main__description" data-aos="fade-right" data-aos-duration="1500">
-				<span class="main__dates">22-23 лютого, 2019</span>
-				<span class="main__place">EVO</span>
-				<span class="main__place">м. Київ, Харківське шосе, 201/203</span>
-				<div class="main__registration">
-					<div class="main__registration__blue">
-						<img src="images/registration_blue.png" />
-					</div>
-					<div class="main__registration__red">
-						<img src="images/registration_red.png" />
-					</div>
-					<a href="javascript:;">ЗАРЕЄСТРУВАТИСЯ</a>
-				</div>
-			</div>
-		</div> 
+<div class="container">
+    <div class="main">
+        <div class="main__logo" data-aos="fade-left" data-aos-duration="1500">
+            <img src="images/logo.png"/>
+        </div>
+        <div class="main__description" data-aos="fade-right" data-aos-duration="1500">
+            <span class="main__dates">22-23 лютого, 2019</span>
+            <span class="main__place">EVO</span>
+            <span class="main__place">м. Київ, Харківське шосе, 201/203</span>
+            <div class="main__registration">
+                <div class="main__registration__blue">
+                    <img src="images/registration_blue.png"/>
+                </div>
+                <div class="main__registration__red">
+                    <img src="images/registration_red.png"/>
+                </div>
+                <a href="javascript:;">ЗАРЕЄСТРУВАТИСЯ</a>
+            </div>
+        </div>
+    </div>
 
 
+    <div class="about-project">
+        <div class="about-project__content">
+            <div class="about-project__header">
+                <h2>Pro Int20h</h2>
+            </div>
+            <div class="about-project__body">
+                <div class="about-project__top">
 
-	<div class="about-project">
-			<div class="about-project__content">
-				<div class="about-project__header">
-					<h2>Pro Int20h</h2>
-				</div>
-				<div class="about-project__body">
-					<div class="about-project__top">
+                    <div class="about-project__column">
 
-						<div class="about-project__column">
+                        <div class="about-project__header">
+                            <span>"let's improve your skills together!"</span>
+                        </div>
 
-							<div class="about-project__header">
-								<span>"let's improve your skills together!"</span>
-							</div>
+                    </div>
+                    <div class="about-project__column">
+                        <div class="about-project__timer">
+                            <svg id="mysvg">
+                                <path fill="#4300AC"
+                                      d="M20,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
+                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
+                                      d="M20,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
+                                <path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
+                                <path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
+                                <text id="timer__days__number" x="85" y="115" text-anchor="middle" font-size="45"
+                                      fill="red" stroke="red">130
+                                </text>
+                                <text x="85" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
 
-						</div>
-						<div class="about-project__column">
-							<div class="about-project__timer">
-								<svg id="mysvg">
-									<path fill="#4300AC"
-										d="M20,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-									<path fill="#10A9DF" stroke="white" stroke-width="2px"
-										d="M20,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-									<path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-									<path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-									<text id="timer__days__number" x="85" y="115" text-anchor="middle" font-size="45"
-										fill="red" stroke="red">130</text>
-									<text x="85" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
+                                <path fill="#4300AC"
+                                      d="M190,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
+                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
+                                      d="M190,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
+                                <path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
+                                <path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
+                                <text id="timer__hours__number" x="255" y="115" text-anchor="middle" font-size="45"
+                                      fill="red" stroke="red">6
+                                </text>
+                                <text x="255" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
 
-									<path fill="#4300AC"
-										d="M190,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-									<path fill="#10A9DF" stroke="white" stroke-width="2px"
-										d="M190,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-									<path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-									<path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-									<text id="timer__hours__number" x="255" y="115" text-anchor="middle" font-size="45"
-										fill="red" stroke="red">6</text>
-									<text x="255" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
+                                <path fill="#4300AC"
+                                      d="M360,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
+                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
+                                      d="M360,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
+                                <path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
+                                <path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
+                                <text id="timer__minutes__number" x="425" y="115" text-anchor="middle"
+                                      font-size="45" fill="red" stroke="red">30
+                                </text>
+                                <text x="425" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
 
-									<path fill="#4300AC"
-										d="M360,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-									<path fill="#10A9DF" stroke="white" stroke-width="2px"
-										d="M360,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-									<path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-									<path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-									<text id="timer__minutes__number" x="425" y="115" text-anchor="middle"
-										font-size="45" fill="red" stroke="red">30</text>
-									<text x="425" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
-
-									<path fill="#4300AC"
-										d="M530,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
-									<path fill="#10A9DF" stroke="white" stroke-width="2px"
-										d="M530,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
-									<path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
-									<path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px" />
-									<text id="timer__seconds__number" x="595" y="115" text-anchor="middle"
-										font-size="45" fill="red" stroke="red">30</text>
-									<text x="595" y="210" text-anchor="middle" font-size="20" fill="white">Секунд</text>
-								</svg>
-							</div>
-						</div>
-					</div>
-					<div class="about-project__bottom">
-						<div class="about-project__column">
+                                <path fill="#4300AC"
+                                      d="M530,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
+                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
+                                      d="M530,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
+                                <path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
+                                <path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
+                                <text id="timer__seconds__number" x="595" y="115" text-anchor="middle"
+                                      font-size="45" fill="red" stroke="red">30
+                                </text>
+                                <text x="595" y="210" text-anchor="middle" font-size="20" fill="white">Секунд</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-project__bottom">
+                    <div class="about-project__column">
 							<span>Хакатон INT20H - одне із найбільших щорічних змагань для ІТ-спеціалістів, які протягом
 								20
 								годин працюють над створенням новітніх рішень із використанням різних технологій у
 								режимі
 								нон-стоп.</span>
-						</div>
-						<div class="about-project__column">
+                    </div>
+                    <div class="about-project__column">
 							<span>Цього року ще більше викликів, ще більше нових учасників, більше компаній-партнерів і
 								все
 								це задля однієї цілі: вирішення актуальних проблем та завдань у сфері IT.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<span class="beforeCategories"></span> 
-			 <div class="categories">
-			<div class="categories__header">
-				<h2>Categories</h2>
-			</div>
-			<div class="categories__body">
-				<div class="categories__red-figure">
-					<img src="images/Vector 2.1.png" />
-				</div>
-				<div class="categories__blue-figure">
-					<img src="images/Vector 2.png" />
-				</div>
-				<div class="categories__list">
-					<div class="categories__element">
-						<img src="images/web.png" />
-						<span>Web development</span>
-					</div>
-					<div class="categories__element">
-						<img src="images/datascience.png" />
-						<span>Data Science</span>
-					</div>
-					<div class="categories__element">
-						<img src="images/mobile.png" />
-						<span>Mobile development</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<span class="afterCategory"></span>
-		<span class="beforeGifts"></span>
-		<div class="gifts">
-			<div class="gifts__header">
-				<img src="images/fg.png">
-			</div>
-			<div class="gifts__body">
-				
-				<div class="gifts__body-right">
-					<label class="gift-card">
-							<input type="radio" id="gift-comfort" name="gifts"  checked /> 
-							<img src="images/comfort.png" />
-						20 годин у комфорті
-					</label>
-					<label class="gift-card">
-							<input type="radio" id="gift-network" name="gifts" /> 
-							<img src="images/networking.png" />
-						Networking
-					</label>
-					<label class="gift-card">
-							<input type="radio" id="gift-doping" name="gifts" /> 
-							<img src="images/doping.png" />
-						Допінг
-					</label>
-					<label class="gift-card">
-							<input type="radio" id="gift-freedom" name="gifts" /> 
-							<img src="images/freedom.png" />
-						Свобода дій
-					</label>
-					<label class="gift-card">
-							<input type="radio" id="gift-welcome" name="gifts" /> 
-							<img src="images/welcome.png" />
-						Welcome pack
-					</label>
-					<label class="gift-card">
-							<input type="radio" id="gift-comfort" name="gifts" /> 
-						6</label> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="beforeCategories"></span>
+    <div class="categories">
+        <div class="categories__header">
+            <h2>Categories</h2>
+        </div>
+        <div class="categories__body">
+            <div class="categories__red-figure">
+                <img src="images/Vector 2.1.png"/>
+            </div>
+            <div class="categories__blue-figure">
+                <img src="images/Vector 2.png"/>
+            </div>
+            <div class="categories__list">
+                <div class="categories__element">
+                    <img src="images/web.png"/>
+                    <span>Web development</span>
+                </div>
+                <div class="categories__element">
+                    <img src="images/datascience.png"/>
+                    <span>Data Science</span>
+                </div>
+                <div class="categories__element">
+                    <img src="images/mobile.png"/>
+                    <span>Mobile development</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="afterCategory"></span>
+    <span class="beforeGifts"></span>
+    <div class="gifts">
+        <div class="gifts__header">
+            <img src="images/fg.png">
+        </div>
+        <div class="gifts__body">
 
-						<div class="gifts__body-left">
+            <div class="gifts__body-right">
+                <label class="gift-card">
+                    <input type="radio" id="gift-comfort" name="gifts" checked/>
+                    <img src="images/comfort.png"/>
+                    20 годин у комфорті
+                </label>
+                <label class="gift-card">
+                    <input type="radio" id="gift-network" name="gifts"/>
+                    <img src="images/networking.png"/>
+                    Networking
+                </label>
+                <label class="gift-card">
+                    <input type="radio" id="gift-doping" name="gifts"/>
+                    <img src="images/doping.png"/>
+                    Допінг
+                </label>
+                <label class="gift-card">
+                    <input type="radio" id="gift-freedom" name="gifts"/>
+                    <img src="images/freedom.png"/>
+                    Свобода дій
+                </label>
+                <label class="gift-card">
+                    <input type="radio" id="gift-welcome" name="gifts"/>
+                    <img src="images/welcome.png"/>
+                    Welcome pack
+                </label>
+                <label class="gift-card">
+                    <input type="radio" id="gift-comfort" name="gifts"/>
+                    6</label>
+
+                <div class="gifts__body-left">
 								<span class="description-card">Протягом усього заходу «Int20h» команди матимуть можливість виконати
 									надані їм завдання у зручному робочому місці, де вони зможуть працювати найбільш
 									ефективно.</span>
-							</div>
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="memories">
-			<h2>Як це було раніше</h2>
+    <div class="memories">
+        <h2>Як це було раніше</h2>
 
-			<div class="cube">
-				<div class="memories__arrow">
-					<img src="images/arrow-left.png">
-				</div>
-				<div class="memories__cube">
-					<input type="radio" checked id="radio-front" name="select-face" />
-					<input type="radio" id="radio-left" name="select-face" />
-					<input type="radio" id="radio-right" name="select-face" />
-					<input type="radio" id="radio-top" name="select-face" />
-					<input type="radio" id="radio-bottom" name="select-face" />
-					<input type="radio" id="radio-back" name="select-face" />
+        <div class="cube">
+            <div class="memories__arrow">
+                <img src="images/arrow-left.png">
+            </div>
+            <div class="memories__cube">
+                <input type="radio" checked id="radio-front" name="select-face"/>
+                <input type="radio" id="radio-left" name="select-face"/>
+                <input type="radio" id="radio-right" name="select-face"/>
+                <input type="radio" id="radio-top" name="select-face"/>
+                <input type="radio" id="radio-bottom" name="select-face"/>
+                <input type="radio" id="radio-back" name="select-face"/>
 
-					<div class="space3d">
-
-
-						<div class="_3dbox">
-							<div class="_3dface _3dface--front"></div>
-							<div class="_3dface _3dface--top"></div>
-							<div class="_3dface _3dface--bottom"></div>
-							<div class="_3dface _3dface--left"></div>
-							<div class="_3dface _3dface--right"></div>
-							<div class="_3dface _3dface--back"></div>
-						</div>
-
-					</div>
-				</div>
-				<div class="memories__arrow">
-					<img src="images/arrow-right.png">
-				</div>
-			</div>
+                <div class="space3d">
 
 
-		</div>
+                    <div class="_3dbox">
+                        <div class="_3dface _3dface--front"></div>
+                        <div class="_3dface _3dface--top"></div>
+                        <div class="_3dface _3dface--bottom"></div>
+                        <div class="_3dface _3dface--left"></div>
+                        <div class="_3dface _3dface--right"></div>
+                        <div class="_3dface _3dface--back"></div>
+                    </div>
 
-		<div class="partners">
-			<div class="partners__header">
-				Партнери минулих років
-			</div>
-			<div class="partners__body">
-				<div class="partner-logo">
-					<img src="images/partners/evo.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/uklon.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/beetroot.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/beetroot_academy.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/genesis.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/bitclave.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/1+1.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/vrgalaxy.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/exitgames.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/globallogic.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/luxoft.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/cyberzone.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/infopulse.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/lemoninspace.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/ideo-grafika.png" />
-				</div>
-				<div class="partner-logo">
-					<img src="images/partners/beetroot_academy.png" />
-				</div>
-
-			</div>
-		</div>
-
-		<div class="place">
-			<h2>Місце проведення</h2>
-			<div id="slider-k">
-				<div class="frame-k">
-					<img src="images/place/EVO1.png" alt="" />
-				</div>
-				<div class="frame-k">
-					<img src="images/place/EVO3.png" alt="" />
-				</div>
-				<div class="frame-k">
-					<img src="images/place/EVO2.png" alt="" />
-				</div>
-				<div class="frame-k">
-					<img src="images/place/EVO5.png" alt="" />
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+            <div class="memories__arrow">
+                <img src="images/arrow-right.png">
+            </div>
+        </div>
 
 
+    </div>
 
-		<div class="organizers__header">
-				<h2>Організатори</h2>
-			</div>
-			<div class="organizers__body">
-				<div class="organizers__section section-first">
-					<div class="organizers__section-photo">
-						<img src="images/organizers/3.png">
-					</div>
-					<div class="organizers__section-text">
+    <div class="partners">
+        <div class="partners__header">
+            Партнери минулих років
+        </div>
+        <div class="partners__body">
+            <div class="partner-logo">
+                <img src="images/partners/evo.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/uklon.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/beetroot.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/beetroot_academy.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/genesis.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/bitclave.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/1+1.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/vrgalaxy.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/exitgames.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/globallogic.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/luxoft.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/cyberzone.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/infopulse.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/lemoninspace.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/ideo-grafika.png"/>
+            </div>
+            <div class="partner-logo">
+                <img src="images/partners/beetroot_academy.png"/>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="place">
+        <h2>Місце проведення</h2>
+        <div id="slider-k">
+            <div class="frame-k">
+                <img src="images/place/EVO1.png" alt=""/>
+            </div>
+            <div class="frame-k">
+                <img src="images/place/EVO3.png" alt=""/>
+            </div>
+            <div class="frame-k">
+                <img src="images/place/EVO2.png" alt=""/>
+            </div>
+            <div class="frame-k">
+                <img src="images/place/EVO5.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="organizers__header">
+        <h2>Організатори</h2>
+    </div>
+    <div class="organizers__body">
+        <div class="organizers__section section-first">
+            <div class="organizers__section-photo">
+                <img src="images/organizers/3.png">
+            </div>
+            <div class="organizers__section-text">
 						<span>BEST(Board of European Students of Technology) - волонтерська, неполітична та некомерційна
 							організація, яка об'єднує студентів по всій Європі заради спільної цілі - розвитку
 							студентів.</span>
-					</div>
-				</div>
-				<div class="organizers__section section-second">
-					<div class="organizers__section-text">
+            </div>
+        </div>
+        <div class="organizers__section section-second">
+            <div class="organizers__section-text">
 						<span>Окрім технічних університетських знань, студенти отримують додаткові навички у різних
 							сферах не пов'язаних з навчанням.</span>
-					</div>
-					<div class="organizers__section-photo">
-						<img src="images/organizers/2.png">
-					</div>
-				</div>
-				<div class="organizers__section section-third">
-					<div class="organizers__section-photo"> 
-						<img src="images/organizers/1.jpg">
-					</div>
-					<div class="organizers__section-text">
+            </div>
+            <div class="organizers__section-photo">
+                <img src="images/organizers/2.png">
+            </div>
+        </div>
+        <div class="organizers__section section-third">
+            <div class="organizers__section-photo">
+                <img src="images/organizers/1.jpg">
+            </div>
+            <div class="organizers__section-text">
 						<span>Завдяки організації різних проектів, ми не лише отримуємо досвід, а й створюємо систему
 							для надання додаткової освіти, що дозволяє студентам розвивати свої вміння та навички для
 							самореалізації у різних професійних напрямках.</span>
-					</div>
-				</div>
-			</div>
-		</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+<div class="contacts">
+    <div class="contacts__header">
+        <h2>Контакти</h2>
+    </div>
+    <div class="contacts__body">
+        <div class="contacts__section-slider">
+            <div class="contacts__section">
+                <img src="images/contacts/Anastasia.png">
+                <div class="contacts__section-block">
+                    <h3>Анастасія</h3>
+                    <h4>Головний організатор</h4>
+                </div>
+                <div class="contacts__section-block">
+                    <h4>n.lagno@gmail.com</h4>
+                    <h4>+380991095969</h4>
+                </div>
+                <div class="contacts__section-block"></div>
+            </div>
+            <div class="contacts__section">
+                <img src="images/contacts/Ivan.png">
+                <div class="contacts__section-block">
+                    <h3>Іван</h3>
+                    <h4>Відділ корпоративних зв’язків</h4>
+                </div>
+                <div class="contacts__section-block">
+                    <h4>hrytchuk2020@gmail.com</h4>
+                    <h4>+380664448509</h4>
+                </div>
+                <div class="contacts__section-block"></div>
+            </div>
+            <div class="contacts__section">
+                <img src="images/contacts/DashaNotMasha.png">
+                <div class="contacts__section-block">
+                    <h3>Дарина</h3>
+                    <h4>Відділ корпоративних зв’язків</h4>
+                </div>
+                <div class="contacts__section-block">
+                    <h4>kovalchuk192000@gmail.com</h4>
+                    <h4>+380967694554</h4>
+                </div>
+                <div class="contacts__section-block"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<div class="contacts">
-			<div class="contacts__header">
-				<h2>Контакти</h2>
-			</div>
-			<div class="contacts__body">
-				<div class="contacts__section-slider">
-					<div class="contacts__section">
-						<img src="images/contacts/Anastasia.png">
-						<div class="contacts__section-block">
-							<h3>Анастасія</h3>
-							<h4>Головний організатор</h4>
-						</div>
-						<div class="contacts__section-block">
-							<h4>n.lagno@gmail.com</h4>
-							<h4>+380991095969</h4>
-						</div>
-						<div class="contacts__section-block"></div>
-					</div>
-					<div class="contacts__section">
-						<img src="images/contacts/Ivan.png">
-						<div class="contacts__section-block">
-							<h3>Іван</h3>
-							<h4>Відділ корпоративних зв’язків</h4>
-						</div>
-						<div class="contacts__section-block">
-							<h4>hrytchuk2020@gmail.com</h4>
-							<h4>+380664448509</h4>
-						</div>
-						<div class="contacts__section-block"></div>
-					</div>
-					<div class="contacts__section">
-						<img src="images/contacts/DashaNotMasha.png">
-						<div class="contacts__section-block">
-							<h3>Дарина</h3>
-							<h4>Відділ корпоративних зв’язків</h4>
-						</div>
-						<div class="contacts__section-block">
-							<h4>kovalchuk192000@gmail.com</h4>
-							<h4>+380967694554</h4>
-						</div>
-						<div class="contacts__section-block"></div>
-					</div>
-				</div>
-			</div>
-		</div>
+</div>
 
-	</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.contacts__section-slider').slick({
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        dots: true,
+                        slidesToShow: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
 
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('.contacts__section-slider').slick({
-				dots: true,
-				infinite: false,
-				speed: 300,
-				slidesToShow: 4,
-				slidesToScroll: 4,
-				responsive: [
-					{
-						breakpoint: 1024,
-						settings: {
-							slidesToShow: 3,
-							slidesToScroll: 3,
-							infinite: true,
-							dots: true
-						}
-					},
-					{
-						breakpoint: 600,
-						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 2
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-					// You can unslick at a given breakpoint now by adding:
-					// settings: "unslick"
-					// instead of a settings object
-
-				]
-			});
-		});
-	</script>
-
+            ]
+        });
+    });
+</script>
 
 </body>
 
