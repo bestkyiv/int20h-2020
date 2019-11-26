@@ -12,4 +12,8 @@
     line-height: 117px;
     color: #10a9df; }
 
+@media (max-width: 1300px) {
+  .place {
+    padding: 0 100px; } }
+
 /*# sourceMappingURL=place.css.map */

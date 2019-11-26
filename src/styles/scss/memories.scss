@@ -50,7 +50,9 @@ input[name="select-face"] {
   }
 
   .memories h2 {
-    padding: 0px;
+    font-size: 80px;
+    line-height: 87px;
+    padding-right: 40px;
     white-space: nowrap;
     width: 750px;
   }
@@ -61,8 +63,23 @@ input[name="select-face"] {
 }
 
 @media (max-width: 900px) {
-  .separator {
-    margin-top: 40px;
-  }
+    .cube {
+      zoom: 80%;
+    }
   
+}
+
+@media (max-width: 600px) {
+  .memories h2 {
+    font-size: 80px;
+    line-height: 87px;
+    padding-right: 40px;
+    white-space: normal;
+    width: 350px;
+  }
+
+  .cube {
+    zoom: 60%;
+  }
+
 }

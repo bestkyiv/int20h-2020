@@ -3,6 +3,7 @@
   width: 100%;
   flex-direction: column;
   height: 100vh;
+  background: #10a9df;
 }
 
 .contacts__header h2 {
@@ -15,34 +16,37 @@
   display: flex;
   color: white;
   background-color: #f43838;
-  width: 100%;
+}
+
+.contacts__body {
+  display: flex;
+  padding-top: 80px;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts__section-slider {
-  //display: flex;
-  background: #10a9df;
-  // padding: 80px 140px;
-  // justify-content: center;
+  display: flex;
 }
 
 .contacts__section {
+  padding: 0 50px;
   display: flex;
-  //padding: 0 60px;
+  justify-content: center;
   flex-direction: column;
 
   img {
-    //width: 427px;
-    //height: 427px;
-    width: 100%;
+    width: 80%;
   }
 }
 
 .contacts__section-block {
-  background: #F43838;
-border-radius: 12px;
+  background: #f43838;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 80%;
   margin: 40px 0 15px 0;
 
   h3 {
@@ -52,7 +56,7 @@ border-radius: 12px;
     font-size: 32px;
     line-height: 35px;
     display: flex;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 5px 0;
   }
 
@@ -63,7 +67,64 @@ border-radius: 12px;
     font-size: 25px;
     line-height: 35px;
     display: flex;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 5px 0;
   }
+}
+
+@media (max-width: 1600px) {
+  .contacts__section {
+    padding: 0 40px;
+
+    img {
+      width: 75%;
+    }
+  }
+
+  .contacts__body {
+    padding-top: 40px;
+  }
+
+  .contacts__section-block {
+    margin: 30px 0 5px 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contacts__section-slider {
+    // padding: 0 20px;
+    display: flex;
+    img {
+      width: 75%;
+    }
+  }
+
+  .contacts__header h2 {
+    font-size: 100px;
+    line-height: 117px;
+    padding: 0 100px;
+  }
+
+  .contacts__section {
+    padding: 0;
+  }
+  .contacts__section-block {
+    background: #f43838;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px 0 5px 0;
+
+    h3 {
+      font-size: 20px;
+      line-height: 35px;
+    }
+  
+    h4 {
+      font-size: 20px;
+      line-height: 35px;
+    }
+}
 }

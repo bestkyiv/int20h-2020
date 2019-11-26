@@ -62,8 +62,8 @@
 .categories__list {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 320px;
+  position: relative;
+  top: 120px;
   .categories__element {
     display: flex;
 
@@ -117,7 +117,7 @@
   }
 
   .categories__list {
-    top: 330px;
+    top: 110px;
 
     .categories__element {
       font-size: 40px;
@@ -136,7 +136,7 @@
   }
 
   .categories__list {
-    top: 490px;
+    top: 100px;
   }
   // .categories__red-figure {
   //   transform: rotate(90deg);

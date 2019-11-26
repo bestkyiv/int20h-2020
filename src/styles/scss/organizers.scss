@@ -65,12 +65,12 @@
   }
 
   .organizers__section-photo {
-    width: 100%;
+    width: 99%;
   }
 
   .organizers__section-text {
     height: 50vw;
-    width: 100%;
+    width: 99%;
   }
 
   .organizers__section-text span {
@@ -80,5 +80,18 @@
 
   .section-second {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 900px) {
+  .organizers__section-text span {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .organizers__header h2 {
+    font-size: 80px;
+    line-height: 87px;
+    padding: 0 100px;
   }
 }

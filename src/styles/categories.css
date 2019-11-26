@@ -42,8 +42,8 @@
 .categories__list {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 320px; }
+  position: relative;
+  top: 120px; }
   .categories__list .categories__element {
     display: flex;
     font-size: 45px;
@@ -82,7 +82,7 @@
     max-width: 800px; }
 
   .categories__list {
-    top: 330px; }
+    top: 110px; }
     .categories__list .categories__element {
       font-size: 40px;
       line-height: 50px; }
@@ -93,7 +93,7 @@
     padding: 200px 0; }
 
   .categories__list {
-    top: 490px; } }
+    top: 100px; } }
 @media (max-width: 800px) {
   .categories__red-figure {
     transform: rotate(90deg); } }

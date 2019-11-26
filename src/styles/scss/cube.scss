@@ -140,52 +140,52 @@ $cubeDepth: $cubeHeight;
 
 @media (max-width: 900px) {
   
-  /* 3D Cube */
-  .space3d {
-    perspective: 10px;
-    width: 500px;
-    height: 500px;
-  }
+  // /* 3D Cube */
+  // .space3d {
+  //   perspective: 1000px;
+  //   width: 300px;
+  //   height: 300px;
+  // }
   
-  ._3dface {
-    line-height: 500px;
-  }
+  // ._3dface {
+  //   line-height: 300px;
+  // }
   
-  ._3dface--front {
-    width: 500px;
-    height: 500px;
-    transform: translate3d(0, 0, 500px / 2);
-  }
+  // ._3dface--front {
+  //   width: 300px;
+  //   height: 300px;
+  //   transform: translate3d(0, 0, 300px / 2);
+  // }
     
-  ._3dface--top {
-    width: 500px;
-    height: 500px;
-    transform: rotateX(90deg) translate3d(0, 0, 500px / 2);
-  }
+  // ._3dface--top {
+  //   width: 300px;
+  //   height: 300px;
+  //   transform: rotateX(90deg) translate3d(0, 0, 300px / 2);
+  // }
   
-  ._3dface--bottom {
-    width: 500px;
-    height: 500px;
-    transform: rotateX(-90deg) translate3d(0, 0, 500px / 2);
-  }
+  // ._3dface--bottom {
+  //   width: 300px;
+  //   height: 300px;
+  //   transform: rotateX(-90deg) translate3d(0, 0, 300px / 2);
+  // }
   
-  ._3dface--left {
-    width: 500px;
-    height: 500px;
-    margin-left: -500px / 2;
-    transform: rotateY(-90deg) translate3d(0, 0, 500px / 2);
-  }
+  // ._3dface--left {
+  //   width: 300px;
+  //   height: 300px;
+  //   margin-left: -300px / 2;
+  //   transform: rotateY(-90deg) translate3d(0, 0, 300px / 2);
+  // }
   
-  ._3dface--right {
-    width: 500px;
-    height: 500px;
-    margin-left: -500px / 2;
-    transform: rotateY(90deg) translate3d(0, 0, 500px / 2);
-  }
+  // ._3dface--right {
+  //   width: 300px;
+  //   height: 300px;
+  //   margin-left: -300px / 2;
+  //   transform: rotateY(90deg) translate3d(0, 0, 300px / 2);
+  // }
   
-  ._3dface--back {
-    width: 500px;
-    height: 500px;
-    transform: rotateY(180deg) translate3d(0, 0, 500px / 2);
-  }
+  // ._3dface--back {
+  //   width: 300px;
+  //   height: 300px;
+  //   transform: rotateY(180deg) translate3d(0, 0, 300px / 2);
+  // }
 }
