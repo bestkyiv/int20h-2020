@@ -2,130 +2,130 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="scripts/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="scripts/slick-1.8.1/slick/slick-theme.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="scripts/jquery-3.4.1.min.js"></script>
-    <script src="scripts/slick-1.8.1/slick/slick.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="scripts/timer.js"></script>
-    <script src="scripts/loader.js"></script>
-    <script src="scripts/animateCube.js"></script>
-    <script src="scripts/gifts.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="scripts/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="scripts/slick-1.8.1/slick/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="scripts/jquery-3.4.1.min.js"></script>
+	<script src="scripts/slick-1.8.1/slick/slick.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="scripts/timer.js"></script>
+	<script src="scripts/loader.js"></script>
+	<script src="scripts/animateCube.js"></script>
+	<script src="scripts/gifts.js"></script>
 
 
-    <title>инт20х</title>
-    <meta charset="utf-8">
+	<title>инт20х</title>
+	<meta charset="utf-8">
 </head>
 
 <body onload="loadCompleted()">
 
-<!-- <body> -->
-<div class="loader">
-    <div class="main__logo">
-        <img src="images/logo.png"/>
-    </div>
-</div>
+	<!-- <body> -->
+	<div class="loader">
+		<div class="main__logo">
+			<img src="images/logo.png" />
+		</div>
+	</div>
 
-<div class="container">
-    <div class="main">
-        <div class="main__logo" data-aos="fade-left" data-aos-duration="1500">
-            <img src="images/logo.png"/>
-        </div>
-        <div class="main__description" data-aos="fade-right" data-aos-duration="1500">
-			<span class="main__dates">22-23 лютого, 2020</span>
-            <span class="main__place">EVO</span>
-            <span class="main__place">м. Київ, Харківське шосе, 201/203</span>
-            <div class="main__registration">
-                <div class="main__registration__blue">
-                    <img src="images/registration_blue.png"/>
-                </div>
-                <div class="main__registration__red">
-                    <img src="images/registration_red.png"/>
-                </div>
-                <a href="javascript:;">ЗАРЕЄСТРУВАТИСЯ</a>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="main">
+			<div class="main__logo" data-aos="fade-left" data-aos-duration="1500">
+				<img src="images/logo.png" />
+			</div>
+			<div class="main__description" data-aos="fade-right" data-aos-duration="1500">
+				<span class="main__dates">22-23 лютого, 2020</span>
+				<span class="main__place">EVO</span>
+				<span class="main__place">м. Київ, Харківське шосе, 201/203</span>
+				<div class="main__registration">
+					<div class="main__registration__blue">
+						<img src="images/registration_blue.png" />
+					</div>
+					<div class="main__registration__red">
+						<img src="images/registration_red.png" />
+					</div>
+					<a href="javascript:;">ЗАРЕЄСТРУВАТИСЯ</a>
+				</div>
+			</div>
+		</div>
 
 
-    <div class="about-project">
-        <div class="about-project__content">
-            <div class="about-project__header">
-                <h2>Pro Int20h</h2>
-            </div>
-            <div class="about-project__body">
-                <div class="about-project__top">
+		<div class="about-project">
+			<div class="about-project__content">
+				<div class="about-project__header">
+					<h2>Pro Int20h</h2>
+				</div>
+				<div class="about-project__body">
+					<div class="about-project__top">
 
-                    <div class="about-project__column">
+						<div class="about-project__column">
 
-                        <div class="about-project__header">
-                            <span>"let's improve your skills together!"</span>
-                        </div>
+							<div class="about-project__header">
+								<span>"let's improve your skills together!"</span>
+							</div>
 
-                    </div>
-                    <div class="about-project__column">
-                        <div class="about-project__timer">
-                            <svg id="mysvg">
-                                <path fill="#4300AC"
-                                      d="M20,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
-                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
-                                      d="M20,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
-                                <path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
-                                <path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
-                                <text id="timer__days__number" x="85" y="115" text-anchor="middle" font-size="45"
-                                      fill="red" stroke="red">130
-                                </text>
-                                <text x="85" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
+						</div>
+						<div class="about-project__column">
+							<div class="about-project__timer">
+								<svg id="mysvg">
+									<path fill="#4300AC"
+										d="M20,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+									<path fill="#10A9DF" stroke="white" stroke-width="2px"
+										d="M20,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+									<path id="timer__days__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+									<path id="timer__days" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+									<text id="timer__days__number" x="85" y="115" text-anchor="middle" font-size="45"
+										fill="red" stroke="red">130
+									</text>
+									<text x="85" y="210" text-anchor="middle" font-size="20" fill="white">Днів</text>
 
-                                <path fill="#4300AC"
-                                      d="M190,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
-                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
-                                      d="M190,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
-                                <path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
-                                <path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
-                                <text id="timer__hours__number" x="255" y="115" text-anchor="middle" font-size="45"
-                                      fill="red" stroke="red">6
-                                </text>
-                                <text x="255" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
+									<path fill="#4300AC"
+										d="M190,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+									<path fill="#10A9DF" stroke="white" stroke-width="2px"
+										d="M190,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+									<path id="timer__hours__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+									<path id="timer__hours" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+									<text id="timer__hours__number" x="255" y="115" text-anchor="middle" font-size="45"
+										fill="red" stroke="red">6
+									</text>
+									<text x="255" y="210" text-anchor="middle" font-size="20" fill="white">Годин</text>
 
-                                <path fill="#4300AC"
-                                      d="M360,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
-                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
-                                      d="M360,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
-                                <path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
-                                <path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
-                                <text id="timer__minutes__number" x="425" y="115" text-anchor="middle"
-                                      font-size="45" fill="red" stroke="red">30
-                                </text>
-                                <text x="425" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
+									<path fill="#4300AC"
+										d="M360,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+									<path fill="#10A9DF" stroke="white" stroke-width="2px"
+										d="M360,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+									<path id="timer__minutes__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+									<path id="timer__minutes" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+									<text id="timer__minutes__number" x="425" y="115" text-anchor="middle"
+										font-size="45" fill="red" stroke="red">30
+									</text>
+									<text x="425" y="210" text-anchor="middle" font-size="20" fill="white">Хвилин</text>
 
-                                <path fill="#4300AC"
-                                      d="M530,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z"/>
-                                <path fill="#10A9DF" stroke="white" stroke-width="2px"
-                                      d="M530,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z"/>
-                                <path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px"/>
-                                <path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px"/>
-                                <text id="timer__seconds__number" x="595" y="115" text-anchor="middle"
-                                      font-size="45" fill="red" stroke="red">30
-                                </text>
-                                <text x="595" y="210" text-anchor="middle" font-size="20" fill="white">Секунд</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-project__bottom">
-                    <div class="about-project__column">
+									<path fill="#4300AC"
+										d="M530,10 h130 a20,20 0 0 1 20,20 v190 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-190 a20,20 0 0 1 20,-20 z" />
+									<path fill="#10A9DF" stroke="white" stroke-width="2px"
+										d="M530,20 h130 a20,20 0 0 1 20,20 v170 a20,20 0 0 1 -20,20 h-130 a20,20 0 0 1 -20,-20 v-170 a20,20 0 0 1 20,-20 z" />
+									<path id="timer__seconds__back" fill="#CEF0F4" stroke="red" stroke-width="1px" />
+									<path id="timer__seconds" fill="#CEF0F4" stroke="red" stroke-width="6px" />
+									<text id="timer__seconds__number" x="595" y="115" text-anchor="middle"
+										font-size="45" fill="red" stroke="red">30
+									</text>
+									<text x="595" y="210" text-anchor="middle" font-size="20" fill="white">Секунд</text>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="about-project__bottom">
+						<div class="about-project__column">
 							<span>Хакатон INT20H - одне із найбільших щорічних змагань для ІТ-спеціалістів, які протягом
 								20
 								годин працюють над створенням новітніх рішень із використанням різних технологій у
 								режимі
 								нон-стоп.</span>
-                    </div>
-                    <div class="about-project__column">
+						</div>
+						<div class="about-project__column">
 							<span>Цього року ще більше викликів, ще більше нових учасників, більше компаній-партнерів і
 								все
 								це задля однієї цілі: вирішення актуальних проблем та завдань у сфері IT.</span>
@@ -134,8 +134,8 @@
 				</div>
 			</div>
 		</div>
-		<span class="beforeCategories"></span> 
-			 <div class="categories">
+		<span class="beforeCategories"></span>
+		<div class="categories">
 			<div class="categories__header">
 				<h2>Categories</h2>
 			</div>
@@ -163,6 +163,18 @@
 			</div>
 		</div>
 		<span class="afterCategory"></span>
+		<div class="requirements">
+			<div class="requirements__list">
+				<h2>Умови участі</h2>
+				<ul>
+					<li class="empty"></li>
+					<li><span>Участь 100 грн</span></li>
+					<li><span>Склад команди від від 2 до 4 людей</span></li>
+					<li><span>Виконання тестового завдання</span></li>
+					<li><span>Дата оголошення команд: 31.01.2020</span></li>
+				</ul>
+			</div>
+		</div>
 		<!-- <span class="beforeGifts"></span>
 		<div class="gifts">
 			<div class="gifts__header">
@@ -301,7 +313,7 @@
 				</div>
 
 			</div>
-		</div> 
+		</div>
 
 		<div class="place">
 			<h2>Місце проведення</h2>
@@ -324,42 +336,42 @@
 
 
 		<div class="organizers__header">
-				<h2>Організатори</h2>
+			<h2>Організатори</h2>
+		</div>
+		<div class="organizers__body">
+			<div class="organizers__section section-first">
+				<div class="organizers__section-photo">
+					<img src="images/organizers/3.png">
+				</div>
+				<div class="organizers__section-text">
+					<span>BEST(Board of European Students of Technology) - волонтерська, неполітична та некомерційна
+						організація, яка об'єднує студентів по всій Європі заради спільної цілі - розвитку
+						студентів.</span>
+				</div>
 			</div>
-			<div class="organizers__body">
-				<div class="organizers__section section-first">
-					<div class="organizers__section-photo">
-						<img src="images/organizers/3.png">
-					</div>
-					<div class="organizers__section-text">
-						<span>BEST(Board of European Students of Technology) - волонтерська, неполітична та некомерційна
-							організація, яка об'єднує студентів по всій Європі заради спільної цілі - розвитку
-							студентів.</span>
-            </div>
-        </div>
-        <div class="organizers__section section-second">
-            <div class="organizers__section-text">
-						<span>Окрім технічних університетських знань, студенти отримують додаткові навички у різних
-							сферах не пов'язаних з навчанням.</span>
-            </div>
-            <div class="organizers__section-photo">
-                <img src="images/organizers/2.png">
-            </div>
-        </div>
-        <div class="organizers__section section-third">
-            <div class="organizers__section-photo">
-                <img src="images/organizers/1.jpg">
-            </div>
-            <div class="organizers__section-text">
-						<span>Завдяки організації різних проектів, ми не лише отримуємо досвід, а й створюємо систему
-							для надання додаткової освіти, що дозволяє студентам розвивати свої вміння та навички для
-							самореалізації у різних професійних напрямках.</span>
-            </div>
-        </div>
-    </div>
-</div>
-	
-	
+			<div class="organizers__section section-second">
+				<div class="organizers__section-text">
+					<span>Окрім технічних університетських знань, студенти отримують додаткові навички у різних
+						сферах не пов'язаних з навчанням.</span>
+				</div>
+				<div class="organizers__section-photo">
+					<img src="images/organizers/2.png">
+				</div>
+			</div>
+			<div class="organizers__section section-third">
+				<div class="organizers__section-photo">
+					<img src="images/organizers/1.jpg">
+				</div>
+				<div class="organizers__section-text">
+					<span>Завдяки організації різних проектів, ми не лише отримуємо досвід, а й створюємо систему
+						для надання додаткової освіти, що дозволяє студентам розвивати свої вміння та навички для
+						самореалізації у різних професійних напрямках.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="contacts">
 		<div class="contacts__header">
 			<h2>Контакти</h2>
@@ -406,32 +418,32 @@
 		</div>
 	</div>
 
-</div>
+	</div>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.contacts__section-slider').slick({
-            slidesToShow: 3,
-            arrows: false,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        dots: true,
-                        slidesToShow: 1
-                    }
-                }
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.contacts__section-slider').slick({
+				slidesToShow: 3,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							dots: true,
+							slidesToShow: 1
+						}
+					}
 
-            ]
-        });
-    });
-</script>
+				]
+			});
+		});
+	</script>
 
 </body>
 
