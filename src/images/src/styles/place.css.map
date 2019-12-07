@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACE,SAAG;EACD,WAAW,EAAE,gBAAgB;EAC7B,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,KAAK;EAClB,KAAK,EAAE,OAAO",
-"sources": ["scss/place.scss"],
-"names": [],
-"file": "place.css"
-}
