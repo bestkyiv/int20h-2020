@@ -1,0 +1,24 @@
+{
+  "name": "int20h-2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:styles": "sass src/styles/scss/style.scss src/styles/style.css",
+    "start": "http-server ./src -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestkyiv/int20h-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bestkyiv/int20h-2020/issues"
+  },
+  "homepage": "https://github.com/bestkyiv/int20h-2020#readme",
+  "devDependencies": {
+    "http-server": "^0.12.0",
+    "sass": "^1.23.7"
+  }
+}
