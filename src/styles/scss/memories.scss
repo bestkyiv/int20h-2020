@@ -8,7 +8,6 @@
 }
 
 .memories h2 {
-  width: 300px;
   white-space: pre-wrap;
   margin: 0px;
   padding: 100px;
@@ -53,8 +52,6 @@ input[name="select-face"] {
     font-size: 80px;
     line-height: 87px;
     padding-right: 40px;
-    white-space: nowrap;
-    width: 750px;
   }
 
   .memories__cube {
@@ -75,7 +72,6 @@ input[name="select-face"] {
     line-height: 87px;
     padding-right: 40px;
     white-space: normal;
-    width: 350px;
   }
 
   .cube {
