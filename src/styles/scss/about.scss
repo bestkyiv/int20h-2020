@@ -14,18 +14,44 @@
 
 .about-project__header {
   display: flex;
-  width: 40%;
-  padding: 0 40px;
+  margin-bottom: 20px;
 }
 
 .about-project__header h2 {
-  margin: 0px;
+  margin: 0;
+
   &:after {
     content: "Pro Int20h";
   }
 
   &:before {
     content: "Pro Int20h";
+  }
+}
+
+
+.about-project__slogan {
+  font-size: 6rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #10a9df;
+  width: 80%;
+  margin-left: auto;
+
+  @include for-mobile() {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  @include for-sm-tablet() {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  @include for-tablet() {
+    font-size: 4.8rem;
   }
 }
 
@@ -47,21 +73,37 @@
   width: 50%;
   flex-direction: column;
   padding: 0 20px;
-  font-size: 32px;
-  line-height: 50px;
+  font-size: 3.2rem;
+  line-height: 1.5;
+
   .about-project__header {
     display: flex;
     width: 100%;
     color: #10a9df;
-    font-size: 70px;
-    line-height: 82px;
+    font-size: 7rem;
+    line-height: 1;
+
+    @include for-mobile {
+      padding: 30px 0px;
+      font-size: 5.5rem;
+      line-height: 1;
+    }
+  }
+
+  @include for-mobile {
+    width: 100%;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 }
 
 .about-project__timer {
-  max-width: 570px;
+  width: 100%;
+  margin-top: 20px;
   flex-direction: column;
   display: flex;
+
   .about-project__header {
     display: flex;
     width: 50%;
@@ -93,11 +135,17 @@
   right: 0px;
 }
 
-@media (max-width: 1700px) {
-  svg {
-    zoom: 85%;
+svg {
+  @include for-mobile {
+    zoom: 45%;
   }
+
+  @include for-tablet {
+    zoom: 70%;
+  }
+
 }
+
 
 @media (max-width: 1550px) {
   .about-project {
@@ -117,17 +165,6 @@
     align-items: center;
   }
 
-  .about-project__column {
-    width: 100%;
-    padding: 0;
-    font-size: 27px;
-    line-height: 42px;
-    .about-project__header {
-      padding: 30px 0px;
-      font-size: 55px;
-      line-height: 62px;
-    }
-  }
 
   .about-project__bottom {
     width: 50%;
@@ -155,24 +192,8 @@
     align-items: center;
   }
 
-  .about-project__header {
-    width: 60%;
-    padding: 0 100px;
-  }
-
-  .about-project__column span {
-    padding: 0 200px;
-  }
-
-  .about-project__column {
-    align-items: center;
-  }
-
   .about-project__bottom {
     padding: 10px 0 100px 0;
   }
 }
 
-@media (max-width: 1200px) {
-
-}

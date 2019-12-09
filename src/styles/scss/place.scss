@@ -1,25 +1,22 @@
 .place {
   height: 100vh;
   width: 100%;
-  padding: 0 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
 
   @media (max-width: 1300px) {
-      padding: 0 100px;
+    padding: 0 100px;
   }
 
   @media (max-width: 1000px) {
     padding: 0 0;
-}
+  }
 
   h2 {
-    font-family: Roboto Condensed;
     font-weight: bold;
-    font-size: 100px;
-    line-height: 117px;
     color: #10a9df;
+    padding: 0 10%;
   }
 }

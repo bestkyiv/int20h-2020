@@ -2,14 +2,11 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    padding: 150px;
   
-    .partners__header {
-      display: flex;
+    .partners__header h2{
       font-weight: bold;
-      font-size: 100px;
-      line-height: 117px;
       color: #10a9df;
+      padding: 0 10%;
     }
   
     .partners__body {

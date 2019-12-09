@@ -12,6 +12,7 @@
   max-width: 620px;
   width: 50%;
   padding: 40px;
+
   img {
     width: 100%;
   }
@@ -26,21 +27,45 @@
   padding: 40px;
 }
 
-.main__dates {
+.main__dates, .main__place {
   font-style: normal;
   font-weight: normal;
-  font-size: 70px;
-  line-height: 82px;
   color: #4300ac;
+  line-height: 1.25;
+  text-align: right;
+
+  @include for-tablet() {
+    margin: 0;
+  }
+
+  @include for-mobile() {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.main__dates {
+  font-size: 5.5rem;
+
+  @include for-tablet() {
+    font-size: 3.4rem;
+  }
+
+  @include for-mobile() {
+    font-size: 2.4rem;
+  }
 }
 
 .main__place {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 37px;
+  font-size: 3.2rem;
 
-  color: #4300ac;
+  @include for-tablet() {
+    font-size: 2.4rem;
+  }
+
+  @include for-mobile() {
+    font-size: 1.6rem;
+  }
 }
 
 a.main__registration {
@@ -56,7 +81,7 @@ a.main__registration {
 
   span {
     opacity: 0;
-    font-size: 40px;
+    font-size: 4rem;
     text-decoration: none;
     color: #ffffff;
     position: absolute;
@@ -67,11 +92,13 @@ a.main__registration {
     animation-name: fadeout;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-  
-    @media (max-width: 1300px) {
+
+
+    @include for-mobile() {
       top: 14px;
-      font-size: 32px;
+      font-size: 3.2rem;
     }
+
   }
 }
 
@@ -90,9 +117,8 @@ a.main__registration {
     @media (max-width: 1300px) {
       width: 350px;
     }
-  }  
+  }
 }
-
 
 
 .main__registration__red {
@@ -123,13 +149,6 @@ a.main__registration {
 }
 
 @media (max-width: 1300px) {
-  .main__dates {
-    font-size: 55px;
-  }
-
-  .main__place {
-    font-size: 23px;
-  }
 
   .main__description {
     padding-top: 100px;
@@ -141,10 +160,10 @@ a.main__registration {
 
 @media (max-width: 1100px) {
   .main {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
   }
 
   // .main__logo {

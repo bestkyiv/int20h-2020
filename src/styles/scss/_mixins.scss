@@ -1,0 +1,54 @@
+@mixin for-mobile() {
+	@media only screen and (max-width: $media-mobile-bp - 1) {
+		@content;
+	}
+}
+@mixin for-mobile-and-sm-tablet() {
+	@media only screen and (max-width: $media-medium-bp - 1) {
+		@content;
+	}
+	
+}
+
+@mixin for-sm-tablet() {
+	@media only screen and (min-width: $media-mobile-bp) and (max-width: $media-medium-bp - 1) {
+		@content;
+	}
+	
+}
+
+@mixin for-tablet() {
+	@media only screen and (min-width: $media-mobile-bp) and (max-width: $media-desktop-bp - 1) {
+		@content;
+	}
+}
+
+@mixin for-tablet-and-desktop() {
+	@media only screen and (min-width: $media-mobile-bp) {
+		@content;
+	}
+}
+
+@mixin for-big-tablet-and-desktop() {
+	@media only screen and (min-width: $media-medium-bp) {
+		@content;
+	}
+}
+
+@mixin for-mobile-and-tablet() {
+	@media only screen and (max-width: $media-desktop-bp - 1) {
+		@content;
+	}
+}
+
+@mixin for-desktop() {
+	@media only screen and (min-width: $media-desktop-bp) {
+		@content;
+	}
+}
+
+@mixin for-big-desktop() {
+	@media only screen and (min-width: $media-big-desktop-bp) {
+		@content;
+	}
+}

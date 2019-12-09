@@ -9,7 +9,9 @@
 .categories__header h2 {
   color: #ffffff;
   text-shadow: #62e3ff -5px -5px 2px, #ffb4b4 5px 5px 2px;
-  margin: 0px;
+  margin: 0;
+  padding: 0 10%;
+
 
   // &:before {
   //   // content: "Categories";
@@ -25,11 +27,8 @@
 .categories__header {
   font-style: normal;
   font-weight: bold;
-  line-height: 117px;
   display: flex;
-  font-size: 100px;
-  padding: 0px 180px;
-  width: 30%;
+  width: 100%;
 }
 
 .categories__body {

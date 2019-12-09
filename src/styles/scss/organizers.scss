@@ -5,9 +5,8 @@
 }
 
 .organizers__header h2 {
-  font-size: 100px;
-  line-height: 117px;
-  padding: 0 300px;
+  padding: 0 10%;
+
 }
 
 .organizers__header {
@@ -54,11 +53,7 @@
 }
 
 @media (max-width: 1200px) {
-  .organizers__header h2 {
-    font-size: 100px;
-    line-height: 117px;
-    padding: 0 100px;
-  }
+
 
   .organizers__section {
     flex-direction: column;
@@ -89,9 +84,4 @@
     line-height: 45px;
   }
 
-  .organizers__header h2 {
-    font-size: 80px;
-    line-height: 87px;
-    padding: 0 100px;
-  }
 }

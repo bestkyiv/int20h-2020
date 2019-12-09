@@ -150,20 +150,51 @@
   padding: 40px;
 }
 
-.main__dates {
+.main__dates, .main__place {
   font-style: normal;
   font-weight: normal;
-  font-size: 70px;
-  line-height: 82px;
   color: #4300ac;
+  line-height: 1.25;
+  text-align: right;
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .main__dates, .main__place {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .main__dates, .main__place {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.main__dates {
+  font-size: 5.5rem;
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .main__dates {
+    font-size: 3.4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .main__dates {
+    font-size: 2.4rem;
+  }
 }
 
 .main__place {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 37px;
-  color: #4300ac;
+  font-size: 3.2rem;
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .main__place {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .main__place {
+    font-size: 1.6rem;
+  }
 }
 
 a.main__registration {
@@ -180,7 +211,7 @@ a.main__registration {
 }
 a.main__registration span {
   opacity: 0;
-  font-size: 40px;
+  font-size: 4rem;
   text-decoration: none;
   color: #ffffff;
   position: absolute;
@@ -192,10 +223,10 @@ a.main__registration span {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-@media (max-width: 1300px) {
+@media only screen and (max-width: 575px) {
   a.main__registration span {
     top: 14px;
-    font-size: 32px;
+    font-size: 3.2rem;
   }
 }
 
@@ -244,14 +275,6 @@ a.main__registration span {
   }
 }
 @media (max-width: 1300px) {
-  .main__dates {
-    font-size: 55px;
-  }
-
-  .main__place {
-    font-size: 23px;
-  }
-
   .main__description {
     padding-top: 100px;
   }
@@ -284,18 +307,45 @@ a.main__registration span {
 
 .about-project__header {
   display: flex;
-  width: 40%;
-  padding: 0 40px;
+  margin-bottom: 20px;
 }
 
 .about-project__header h2 {
-  margin: 0px;
+  margin: 0;
 }
 .about-project__header h2:after {
   content: "Pro Int20h";
 }
 .about-project__header h2:before {
   content: "Pro Int20h";
+}
+
+.about-project__slogan {
+  font-size: 6rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #10a9df;
+  width: 80%;
+  margin-left: auto;
+}
+@media only screen and (max-width: 575px) {
+  .about-project__slogan {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about-project__slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .about-project__slogan {
+    font-size: 4.8rem;
+  }
 }
 
 .about-project__top {
@@ -316,19 +366,35 @@ a.main__registration span {
   width: 50%;
   flex-direction: column;
   padding: 0 20px;
-  font-size: 32px;
-  line-height: 50px;
+  font-size: 3.2rem;
+  line-height: 1.5;
 }
 .about-project__column .about-project__header {
   display: flex;
   width: 100%;
   color: #10a9df;
-  font-size: 70px;
-  line-height: 82px;
+  font-size: 7rem;
+  line-height: 1;
+}
+@media only screen and (max-width: 575px) {
+  .about-project__column .about-project__header {
+    padding: 30px 0px;
+    font-size: 5.5rem;
+    line-height: 1;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .about-project__column {
+    width: 100%;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
 }
 
 .about-project__timer {
-  max-width: 570px;
+  width: 100%;
+  margin-top: 20px;
   flex-direction: column;
   display: flex;
 }
@@ -359,11 +425,17 @@ a.main__registration span {
   right: 0px;
 }
 
-@media (max-width: 1700px) {
+@media only screen and (max-width: 575px) {
   svg {
-    zoom: 85%;
+    zoom: 45%;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  svg {
+    zoom: 70%;
+  }
+}
+
 @media (max-width: 1550px) {
   .about-project {
     padding: 0 20px;
@@ -379,18 +451,6 @@ a.main__registration span {
     padding: 0 50px;
     flex-direction: column;
     align-items: center;
-  }
-
-  .about-project__column {
-    width: 100%;
-    padding: 0;
-    font-size: 27px;
-    line-height: 42px;
-  }
-  .about-project__column .about-project__header {
-    padding: 30px 0px;
-    font-size: 55px;
-    line-height: 62px;
   }
 
   .about-project__bottom {
@@ -418,19 +478,6 @@ a.main__registration span {
     align-items: center;
   }
 
-  .about-project__header {
-    width: 60%;
-    padding: 0 100px;
-  }
-
-  .about-project__column span {
-    padding: 0 200px;
-  }
-
-  .about-project__column {
-    align-items: center;
-  }
-
   .about-project__bottom {
     padding: 10px 0 100px 0;
   }
@@ -446,17 +493,15 @@ a.main__registration span {
 .categories__header h2 {
   color: #ffffff;
   text-shadow: #62e3ff -5px -5px 2px, #ffb4b4 5px 5px 2px;
-  margin: 0px;
+  margin: 0;
+  padding: 0 10%;
 }
 
 .categories__header {
   font-style: normal;
   font-weight: bold;
-  line-height: 117px;
   display: flex;
-  font-size: 100px;
-  padding: 0px 180px;
-  width: 30%;
+  width: 100%;
 }
 
 .categories__body {
@@ -567,9 +612,7 @@ a.main__registration span {
 }
 
 .organizers__header h2 {
-  font-size: 100px;
-  line-height: 117px;
-  padding: 0 300px;
+  padding: 0 10%;
 }
 
 .organizers__header {
@@ -616,12 +659,6 @@ a.main__registration span {
 }
 
 @media (max-width: 1200px) {
-  .organizers__header h2 {
-    font-size: 100px;
-    line-height: 117px;
-    padding: 0 100px;
-  }
-
   .organizers__section {
     flex-direction: column;
   }
@@ -649,12 +686,6 @@ a.main__registration span {
     font-size: 35px;
     line-height: 45px;
   }
-
-  .organizers__header h2 {
-    font-size: 80px;
-    line-height: 87px;
-    padding: 0 100px;
-  }
 }
 .contacts {
   display: flex;
@@ -664,9 +695,7 @@ a.main__registration span {
 }
 
 .contacts__header h2 {
-  font-size: 100px;
-  line-height: 117px;
-  padding: 0 300px;
+  padding: 0 10%;
 }
 
 .contacts__header {
@@ -750,12 +779,6 @@ a.main__registration span {
   }
   .contacts__section-slider img {
     width: 75%;
-  }
-
-  .contacts__header h2 {
-    font-size: 100px;
-    line-height: 117px;
-    padding: 0 100px;
   }
 
   .contacts__section-block {
@@ -856,14 +879,11 @@ input[name=select-face] {
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 150px;
 }
-.partners .partners__header {
-  display: flex;
+.partners .partners__header h2 {
   font-weight: bold;
-  font-size: 100px;
-  line-height: 117px;
   color: #10a9df;
+  padding: 0 10%;
 }
 .partners .partners__body {
   display: flex;
@@ -972,7 +992,6 @@ input[name=select-face] {
 .place {
   height: 100vh;
   width: 100%;
-  padding: 0 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -989,11 +1008,9 @@ input[name=select-face] {
   }
 }
 .place h2 {
-  font-family: Roboto Condensed;
   font-weight: bold;
-  font-size: 100px;
-  line-height: 117px;
   color: #10a9df;
+  padding: 0 10%;
 }
 
 #slider-k {
@@ -1042,6 +1059,10 @@ input[name=select-face] {
   margin-right: -63px;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: #CEF0F4;
   margin: 0;
@@ -1055,20 +1076,31 @@ img {
 }
 
 h2 {
-  font-size: 100px;
-  line-height: 117px;
+  font-size: 10rem;
+  line-height: 1;
   font-style: normal;
   font-weight: normal;
   color: #003345;
   position: relative;
 }
+@media only screen and (max-width: 575px) {
+  h2 {
+    font-size: 4.8rem;
+  }
+}
 h2:after {
+  width: 100%;
   position: absolute;
-  top: 4px;
-  left: 2px;
+  left: -4px;
+  top: -2px;
   color: #f43838;
-  white-space: nowrap;
   mix-blend-mode: multiply;
+}
+@media only screen and (max-width: 575px) {
+  h2:after {
+    left: -2px;
+    top: -2px;
+  }
 }
 h2:before {
   position: absolute;
