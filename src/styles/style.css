@@ -906,6 +906,9 @@ input[name=select-face] {
   display: flex;
   width: 30%;
 }
+.gifts .gifts__body-left span {
+  transition: all 0.8s cubic-bezier(0.21, 0.8, 0.59, 0.92);
+}
 .gifts .description-card {
   background: #10a9df;
   width: 540px;
@@ -946,12 +949,8 @@ input[name=select-face] {
   max-width: 50%;
   height: auto;
 }
-.gifts .gift-card:has(input:checked) {
-  box-shadow: 0 0;
-}
-
-#gift-comfort:checked ~ .description-card {
-  background: chartreuse;
+.gifts .gift-card input {
+  display: none;
 }
 
 .beforeGifts {
@@ -1038,6 +1037,61 @@ input[name=select-face] {
   margin-right: -63px;
 }
 
+.requirements {
+  height: 100vh;
+  width: 100%;
+  background: #10a9df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.requirements .requirements__list {
+  width: 80%;
+}
+.requirements h2 {
+  background: #5d00f0;
+  margin: 0;
+  padding: 30px;
+}
+.requirements ul {
+  width: 70%;
+  float: right;
+  border: 30px solid #5d00f0;
+  border-top: 0;
+  margin: 0;
+  padding: 40px 20px;
+}
+.requirements li.empty {
+  shape-outside: polygon(0 0, 0 200px, 200px 300px);
+  width: 300px;
+  height: 200px;
+  float: left;
+  list-style: none;
+}
+.requirements li {
+  margin: 25px;
+  display: list-item;
+  list-style-position: inside;
+}
+.requirements li span {
+  font-size: 35px;
+  line-height: 50px;
+  color: white;
+  background: red;
+}
+
+@media (max-width: 1300px) {
+  .requirements li.empty {
+    shape-outside: none;
+    width: 0;
+    height: 0;
+    float: right;
+  }
+  .requirements .li {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
 html {
   font-size: 10px;
 }
