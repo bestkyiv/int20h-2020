@@ -308,6 +308,7 @@ a.main__registration span {
 .about-project__header {
   display: flex;
   margin-bottom: 20px;
+  padding: 0 5%;
 }
 
 .about-project__header h2 {
@@ -325,7 +326,6 @@ a.main__registration span {
   line-height: 1.2;
   font-weight: 400;
   color: #10a9df;
-  width: 80%;
   margin-left: auto;
 }
 @media only screen and (max-width: 575px) {
@@ -358,12 +358,17 @@ a.main__registration span {
 .about-project__bottom {
   display: flex;
   flex-direction: row;
-  padding: 20px 0;
+  padding-top: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .about-project__bottom {
+    padding-bottom: 60px;
+  }
 }
 
 .about-project__column {
   display: flex;
-  width: 50%;
+  width: 100%;
   flex-direction: column;
   padding: 0 20px;
   font-size: 3.2rem;
@@ -425,6 +430,9 @@ a.main__registration span {
   right: 0px;
 }
 
+svg {
+  zoom: 85%;
+}
 @media only screen and (max-width: 575px) {
   svg {
     zoom: 45%;
@@ -448,7 +456,7 @@ a.main__registration span {
 
   .about-project__top {
     width: 50%;
-    padding: 0 50px;
+    padding-left: 5%;
     flex-direction: column;
     align-items: center;
   }
@@ -457,7 +465,6 @@ a.main__registration span {
     width: 50%;
     flex-direction: column;
     align-items: center;
-    padding: 0;
   }
 }
 @media (max-width: 1300px) {
@@ -476,10 +483,6 @@ a.main__registration span {
   .about-project__bottom {
     width: 100%;
     align-items: center;
-  }
-
-  .about-project__bottom {
-    padding: 10px 0 100px 0;
   }
 }
 .categories {
@@ -614,7 +617,6 @@ a.main__registration span {
 }
 
 .organizers__header {
-  display: flex;
   color: white;
   background-color: #f43838;
   width: 100%;
@@ -807,9 +809,8 @@ a.main__registration span {
 }
 
 .memories h2 {
-  white-space: pre-wrap;
-  margin: 0px;
-  padding: 100px;
+  margin: 0;
+  padding: 0 10%;
 }
 
 .cube {
@@ -846,12 +847,6 @@ input[name=select-face] {
     flex-direction: column;
   }
 
-  .memories h2 {
-    font-size: 80px;
-    line-height: 87px;
-    padding-right: 40px;
-  }
-
   .memories__cube {
     padding: 80px;
   }
@@ -862,13 +857,6 @@ input[name=select-face] {
   }
 }
 @media (max-width: 600px) {
-  .memories h2 {
-    font-size: 80px;
-    line-height: 87px;
-    padding-right: 40px;
-    white-space: normal;
-  }
-
   .cube {
     zoom: 60%;
   }
@@ -879,7 +867,6 @@ input[name=select-face] {
   flex-direction: column;
 }
 .partners .partners__header h2 {
-  font-weight: bold;
   color: #10a9df;
   padding: 0 10%;
 }
@@ -994,11 +981,7 @@ input[name=select-face] {
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
-}
-@media (max-width: 1300px) {
-  .place {
-    padding: 0 100px;
-  }
+  padding: 0 10%;
 }
 @media (max-width: 1000px) {
   .place {
@@ -1006,9 +989,7 @@ input[name=select-face] {
   }
 }
 .place h2 {
-  font-weight: bold;
   color: #10a9df;
-  padding: 0 10%;
 }
 
 #slider-k {

@@ -8,9 +8,8 @@
 }
 
 .memories h2 {
-  white-space: pre-wrap;
-  margin: 0px;
-  padding: 100px;
+  margin: 0;
+  padding: 0 10%;
 }
 
 .cube {
@@ -48,12 +47,6 @@ input[name="select-face"] {
     flex-direction: column;
   }
 
-  .memories h2 {
-    font-size: 80px;
-    line-height: 87px;
-    padding-right: 40px;
-  }
-
   .memories__cube {
     padding: 80px;
   }
@@ -67,12 +60,6 @@ input[name="select-face"] {
 }
 
 @media (max-width: 600px) {
-  .memories h2 {
-    font-size: 80px;
-    line-height: 87px;
-    padding-right: 40px;
-    white-space: normal;
-  }
 
   .cube {
     zoom: 60%;
