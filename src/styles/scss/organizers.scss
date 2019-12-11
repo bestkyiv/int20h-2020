@@ -1,3 +1,5 @@
+@import 'variables';
+
 .organizers {
   display: flex;
   width: 100%;
@@ -6,7 +8,6 @@
 
 .organizers__header h2 {
   padding: 0 10%;
-
 }
 
 .organizers__header {
@@ -52,8 +53,6 @@
 }
 
 @media (max-width: 1200px) {
-
-
   .organizers__section {
     flex-direction: column;
   }
@@ -82,5 +81,27 @@
     font-size: 35px;
     line-height: 45px;
   }
+}
 
+@media (max-width: $media-medium-bp - 1) {
+  .organizers__section-text span {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: $media-mobile-bp - 1) {
+  .organizers__section-text span {
+    padding: 0 50px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 400px) {
+  .organizers__section-text span {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 21px;
+  }
 }

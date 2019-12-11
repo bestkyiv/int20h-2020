@@ -21,10 +21,6 @@
     .gifts__body-left {
       display: flex;
       width: 30%;
-
-      span {
-        transition: all 0.8s cubic-bezier(0.21, 0.8, 0.59, 0.92);
-      }
     }
   
     .description-card {
@@ -42,7 +38,7 @@
   
     .gifts__body-right {
       display: flex;
-          padding: 0 75px;
+          // padding: 0 75px;
       flex-wrap: wrap;
     }
   

@@ -7,8 +7,16 @@
   overflow: hidden;
   padding: 0 10%;
 
-  @media (max-width: 1000px) {
-    padding: 0 0;
+  @include for-mobile-and-tablet {
+    padding: 20px 5%;
+  }
+
+  @include for-mobile-and-sm-tablet {
+    padding: 20px 1%;
+  }
+
+  @include for-mobile {
+    padding: 0;
   }
 
   h2 {

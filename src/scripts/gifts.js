@@ -22,8 +22,15 @@ $(document).ready(function () {
                 break;
         }
 
-        $('div.gifts__body-left').children().first().text(text);
-        // $(this).parent().attr('style',' box-shadow: 0 0;').delay('600').attr('style','10px 10px #10a9df');
+        var descriptionBlock = $('div.gifts__body-left').children().first();
+        descriptionBlock.fadeIn(400);
+
+        var card = $(this).parent();
+        card.attr('style', ' box-shadow: 0 0;')
+        setTimeout(function () {
+            card.attr('style', '10px 10px #10a9df');
+            descriptionBlock.text(text);
+        },500);
     });
 
 

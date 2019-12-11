@@ -1,10 +1,18 @@
 #slider-k {
   background: url(../images/place/EVO4.png);
-  width: 800px;
+  width: 80vw;
   height: 400px;
 //   margin: 20px auto;
   overflow: hidden;
   border-radius: 0.5rem;
+
+  @include for-mobile-and-tablet {
+    width: 90vw;
+  }
+
+  @include for-mobile-and-sm-tablet {
+    width: 100vw;
+  }
 }
 #slider-k .frame-k {
   -moz-box-sizing: border-box;
@@ -14,7 +22,7 @@
   float: left;
   overflow: hidden;
   border-left: 10px solid #fff;
-  pointer: cursor;
+  // pointer: cursor;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
   transform: skewX(-20deg);
   transition: width 1.2s ease-in-out;
@@ -24,7 +32,10 @@
   cursor: w-resize;
 }
 #slider-k:hover div:hover {
-  width: 392px;
+  width: 500px;
+  @include for-mobile {
+    width: 300px;
+  }
 }
 
 .frame-k img {
