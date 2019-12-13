@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    padding: 130px 150px;
+    padding: 130px 50px;
     // justify-content: center;
   
     .gifts__header {
@@ -48,7 +48,7 @@
       width: 270px;
       height: 225px;
       border-radius: 12px;
-      margin: 0 42px;
+      margin: 20px 30px;
       font-size: 25px;
       line-height: 29px;
       align-items: center;
@@ -57,7 +57,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 25px 40px;
+      // margin: 25px 40px;
       // shadow
       box-shadow: 10px 10px #10a9df;
       transition: all 0.8s cubic-bezier(0.21, 0.8, 0.59, 0.92);
@@ -72,16 +72,13 @@
       }
     }
 
-    // .gift-card:has(input:checked) {
-    //   box-shadow: 0 0;
-    // }
-
-    
-    // .gift-card:hover {
-    //   box-shadow: 0 0;
-    // }
-
   }
+
+  @media (max-width: 1530px) {
+    .gift-card {
+    margin: 10px 15px;
+  }
+}
   
   .beforeGifts {
     display: flex;
@@ -105,3 +102,4 @@
     right: 0px;
     z-index: -999;
   }
+

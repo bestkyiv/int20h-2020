@@ -43,7 +43,7 @@
   transition: all 0.5s;
   // top: 150px;
 
-  @include for-mobile {
+  @include for-mobile-and-sm-tablet {
     display: none;
   }
 }
@@ -53,7 +53,7 @@
   transition: all 0.5s;
   // top: -380px;
 
-  @include for-mobile {
+  @include for-mobile-and-sm-tablet {
     display: none;
   }
 }

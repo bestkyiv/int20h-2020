@@ -199,3 +199,29 @@ svg {
 
 }
 
+@media (max-width: $media-desktop-bp) {
+  .about-project {
+    padding: 100px 0;
+  }
+
+  .about-project__column {
+    align-items: center;
+  }
+
+  .about-project__timer {
+    align-items: center;
+  }
+}
+
+
+@media (max-width: $media-desktop-bp) {
+  .about-project {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: $media-medium-bp) {
+  .about-project {
+    padding: 100px 20px;
+  }
+}
