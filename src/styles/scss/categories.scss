@@ -4,6 +4,12 @@
   width: 100%;
   background-color: #5d00f0;
   flex-direction: column;
+  padding: 10px 0 100px 0;
+
+  @include for-mobile {
+    padding: 20px 0;
+    height: auto;
+  }
 }
 
 .categories__header h2 {
@@ -11,17 +17,6 @@
   text-shadow: #62e3ff -5px -5px 2px, #ffb4b4 5px 5px 2px;
   margin: 0;
   padding: 0 10%;
-
-
-  // &:before {
-  //   // content: "Categories";
-  //   // text-shadow: -3px -3px #62e3ff;
-  // }
-
-  // &:after {
-  //   // content: "Categories";
-  //   // text-shadow: -3px -3px #ffb4b4;
-  // }
 }
 
 .categories__header {

@@ -7,9 +7,26 @@
   flex-direction: row;
 }
 
-.memories h2 {
-  margin: 0;
+.memories__header{
   padding: 0 10%;
+  margin: 15px;
+  
+  h2 {
+    margin: 0;   
+    color: aliceblue;
+    margin: 0;
+    
+    &:after {
+      content: "Як це було раніше";
+      color: #f43838;
+    }
+    
+    &:before {
+      content: "Як це було раніше";
+      
+      color: #10a9df;
+    }
+  }
 }
 
 .cube {
@@ -19,13 +36,14 @@
 
 .memories__cube {
   display: flex;
-  padding: 200px;
+  padding: 150px;
 }
 
 .memories__arrow {
   transition: all 0.2s ease-in-out;
   display: flex;
   align-items: center;
+  min-width: 50px;
 }
 
 .memories__arrow:hover {
@@ -48,21 +66,18 @@ input[name="select-face"] {
   }
 
   .memories__cube {
-    padding: 80px;
+    // padding: 80px;
   }
 }
 
 @media (max-width: 900px) {
-    .cube {
-      zoom: 80%;
-    }
-  
+  .cube {
+    zoom: 80%;
+  }
 }
 
 @media (max-width: 600px) {
-
   .cube {
-    zoom: 60%;
+    zoom: 50%;
   }
-
 }

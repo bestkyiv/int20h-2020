@@ -19,14 +19,19 @@
 }
 
 .about-project__header h2 {
+  color: aliceblue;
   margin: 0;
 
   &:after {
-    content: "Pro Int20h";
+    content: "Про Int20h";
+    color: #f43838;
+
   }
 
   &:before {
-    content: "Pro Int20h";
+    content: "Про Int20h";
+    
+    color: #10a9df;
   }
 }
 

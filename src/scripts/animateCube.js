@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let cube = document.getElementsByName('select-face');
-    let counter = 0;
+    let counter = 2;
 
 
     function changeCube() {
@@ -8,12 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
             counter = cube.length - 1;
         else if (counter >= cube.length)
             counter = 0;
-        console.log(counter);
         cube[counter].checked = true;
     }
     
     counter++;
-    var timeinterval = setInterval(changeCube, 5000);
+    // var timeinterval = setInterval(changeCube, 5000);
 
 
     let arrows = document.getElementsByClassName("memories__arrow");

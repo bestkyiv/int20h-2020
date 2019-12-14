@@ -12,6 +12,7 @@
 @import "place";
 @import "slider";
 @import "requirements";
+// @import "benefits";
 
 html {
   font-size: 10px;
@@ -44,10 +45,10 @@ h2 {
   &:after {
     width: 100%;
     position: absolute;
-    left: -4px;
+    left: -2px;
     top: -2px;
-    color: #f43838;
     mix-blend-mode: multiply;
+    white-space: pre-wrap;
 
     @include for-mobile(){
       left: -2px;
@@ -57,11 +58,11 @@ h2 {
 
   &:before {
     position: absolute;
-    top: -4px;
-    left: -2px;
+    top: -5px;
+    left: -5px;
     color: #10a9df;
-    white-space: nowrap;
     mix-blend-mode: multiply;
+    white-space: pre-wrap;
   }
 }
 
