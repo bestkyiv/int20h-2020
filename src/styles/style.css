@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .separator {
   margin-top: 40px;
 }
@@ -282,6 +283,10 @@ a.main__registration span {
   .main__logo {
     max-width: 400px;
   }
+
+  a.main__registration span {
+    font-size: 3.3rem;
+  }
 }
 @media (max-width: 1100px) {
   .main {
@@ -312,13 +317,16 @@ a.main__registration span {
 }
 
 .about-project__header h2 {
+  color: aliceblue;
   margin: 0;
 }
 .about-project__header h2:after {
-  content: "Pro Int20h";
+  content: "Про Int20h";
+  color: #f43838;
 }
 .about-project__header h2:before {
-  content: "Pro Int20h";
+  content: "Про Int20h";
+  color: #10a9df;
 }
 
 .about-project__slogan {
@@ -485,12 +493,42 @@ svg {
     align-items: center;
   }
 }
+@media (max-width: 992px) {
+  .about-project {
+    padding: 100px 0;
+  }
+
+  .about-project__column {
+    align-items: center;
+  }
+
+  .about-project__timer {
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .about-project {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 768px) {
+  .about-project {
+    padding: 100px 20px;
+  }
+}
 .categories {
   display: flex;
   height: 100vh;
   width: 100%;
   background-color: #5d00f0;
   flex-direction: column;
+  padding: 10px 0 100px 0;
+}
+@media only screen and (max-width: 575px) {
+  .categories {
+    padding: 20px 0;
+    height: auto;
+  }
 }
 
 .categories__header h2 {
@@ -518,7 +556,7 @@ svg {
   position: absolute;
   transition: all 0.5s;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
   .categories__red-figure {
     display: none;
   }
@@ -528,7 +566,7 @@ svg {
   position: absolute;
   transition: all 0.5s;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
   .categories__blue-figure {
     display: none;
   }
@@ -546,7 +584,7 @@ svg {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 120px;
+  top: 110px;
 }
 @media only screen and (max-width: 575px) {
   .categories__list {
@@ -576,6 +614,7 @@ svg {
   position: relative;
   width: 100%;
   height: 10%;
+  z-index: 100;
 }
 
 .afterCategory::before {
@@ -614,6 +653,8 @@ svg {
 
 .organizers__header h2 {
   padding: 0 10%;
+  text-shadow: #62e3ff -5px -5px 2px, #ffb4b4 5px 5px 2px;
+  color: aliceblue;
 }
 
 .organizers__header {
@@ -687,6 +728,26 @@ svg {
     line-height: 45px;
   }
 }
+@media (max-width: 767px) {
+  .organizers__section-text span {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .organizers__section-text span {
+    padding: 0 50px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 400px) {
+  .organizers__section-text span {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 .contacts {
   display: flex;
   width: 100%;
@@ -696,6 +757,8 @@ svg {
 
 .contacts__header h2 {
   padding: 0 10%;
+  text-shadow: #62e3ff -5px -5px 2px, #ffb4b4 5px 5px 2px;
+  color: aliceblue;
 }
 
 .contacts__header {
@@ -808,9 +871,22 @@ svg {
   flex-direction: row;
 }
 
-.memories h2 {
-  margin: 0;
+.memories__header {
   padding: 0 10%;
+  margin: 15px;
+}
+.memories__header h2 {
+  margin: 0;
+  color: aliceblue;
+  margin: 0;
+}
+.memories__header h2:after {
+  content: "Як це було раніше";
+  color: #f43838;
+}
+.memories__header h2:before {
+  content: "Як це було раніше";
+  color: #10a9df;
 }
 
 .cube {
@@ -820,13 +896,14 @@ svg {
 
 .memories__cube {
   display: flex;
-  padding: 200px;
+  padding: 150px;
 }
 
 .memories__arrow {
   transition: all 0.2s ease-in-out;
   display: flex;
   align-items: center;
+  min-width: 50px;
 }
 
 .memories__arrow:hover {
@@ -846,10 +923,6 @@ input[name=select-face] {
   .memories {
     flex-direction: column;
   }
-
-  .memories__cube {
-    padding: 80px;
-  }
 }
 @media (max-width: 900px) {
   .cube {
@@ -858,7 +931,7 @@ input[name=select-face] {
 }
 @media (max-width: 600px) {
   .cube {
-    zoom: 60%;
+    zoom: 50%;
   }
 }
 .partners {
@@ -888,51 +961,67 @@ input[name=select-face] {
 .gifts {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
-  padding: 130px 150px;
+  padding: 130px 50px;
+}
+@media only screen and (max-width: 575px) {
+  .gifts {
+    padding: 100px 10px 10px 10px;
+  }
 }
 .gifts .gifts__header {
   display: flex;
   width: 80%;
 }
+.gifts .gifts__header h2 {
+  color: aliceblue;
+  margin: 0;
+}
+.gifts .gifts__header h2:after {
+  content: "Що отримують учасники";
+  color: #f43838;
+}
+.gifts .gifts__header h2:before {
+  content: "Що отримують учасники";
+  color: #10a9df;
+}
+@media only screen and (max-width: 575px) {
+  .gifts .gifts__header h2 {
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .gifts .gifts__header {
+    padding: 0 20px;
+  }
+}
 .gifts .gifts__body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 50px 0;
-}
-.gifts .gifts__body-left {
-  display: flex;
-  width: 30%;
-}
-.gifts .gifts__body-left span {
-  transition: all 0.8s cubic-bezier(0.21, 0.8, 0.59, 0.92);
-}
-.gifts .description-card {
-  background: #10a9df;
-  width: 540px;
-  height: 515px;
-  border-radius: 12px;
-  font-size: 32px;
-  line-height: 50px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-}
-.gifts .gifts__body-right {
-  display: flex;
-  padding: 0 75px;
+  justify-content: center;
   flex-wrap: wrap;
+  padding: 0 50px;
+}
+.gifts .front .gift-card {
+  background: #f43838;
+  box-shadow: 10px 10px #10a9df;
+}
+.gifts .back .gift-card {
+  background: #10a9df;
+  box-shadow: 10px 10px #f43838;
+}
+@media only screen and (max-width: 575px) {
+  .gifts .gifts__body-card {
+    padding: 10px 0;
+  }
 }
 .gifts .gift-card {
   display: flex;
-  background: #f43838;
-  width: 270px;
-  height: 225px;
+  width: 315px;
+  height: 290px;
   border-radius: 12px;
-  margin: 0 42px;
+  margin: 20px 30px;
   font-size: 25px;
   line-height: 29px;
   align-items: center;
@@ -941,8 +1030,6 @@ input[name=select-face] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25px 40px;
-  box-shadow: 10px 10px #10a9df;
   transition: all 0.8s cubic-bezier(0.21, 0.8, 0.59, 0.92);
 }
 .gifts .gift-card img {
@@ -952,7 +1039,15 @@ input[name=select-face] {
 .gifts .gift-card input {
   display: none;
 }
+.gifts .gift-card .description-card {
+  padding: 20px;
+}
 
+@media (max-width: 1530px) {
+  .gift-card {
+    margin: 10px 15px;
+  }
+}
 .beforeGifts {
   display: flex;
   background-color: #10a9df;
@@ -982,21 +1077,46 @@ input[name=select-face] {
   overflow: hidden;
   padding: 0 10%;
 }
-@media (max-width: 1000px) {
+@media only screen and (max-width: 991px) {
   .place {
-    padding: 0 0;
+    padding: 20px 5%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .place {
+    padding: 20px 1%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .place {
+    padding: 0;
   }
 }
 .place h2 {
   color: #10a9df;
 }
+@media only screen and (max-width: 575px) {
+  .place h2 {
+    padding: 0 20px;
+  }
+}
 
 #slider-k {
   background: url(../images/place/EVO4.png);
-  width: 800px;
+  width: 80vw;
   height: 400px;
   overflow: hidden;
   border-radius: 0.5rem;
+}
+@media only screen and (max-width: 991px) {
+  #slider-k {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #slider-k {
+    width: 100vw;
+  }
 }
 
 #slider-k .frame-k {
@@ -1007,7 +1127,6 @@ input[name=select-face] {
   float: left;
   overflow: hidden;
   border-left: 10px solid #fff;
-  pointer: cursor;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
   transform: skewX(-20deg);
   transition: width 1.2s ease-in-out;
@@ -1019,7 +1138,12 @@ input[name=select-face] {
 }
 
 #slider-k:hover div:hover {
-  width: 392px;
+  width: 500px;
+}
+@media only screen and (max-width: 575px) {
+  #slider-k:hover div:hover {
+    width: 300px;
+  }
 }
 
 .frame-k img {
@@ -1048,10 +1172,22 @@ input[name=select-face] {
 .requirements .requirements__list {
   width: 80%;
 }
-.requirements h2 {
+@media only screen and (max-width: 767px) {
+  .requirements .requirements__list {
+    width: 95%;
+  }
+}
+.requirements .requirements__header h2 {
   background: #5d00f0;
+  color: aliceblue;
+  text-shadow: #62e3ff -5px -5px 2px, #ffb4b4 5px 5px 2px;
   margin: 0;
   padding: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .requirements .requirements__header h2 {
+    padding: 10px;
+  }
 }
 .requirements ul {
   width: 70%;
@@ -1060,6 +1196,17 @@ input[name=select-face] {
   border-top: 0;
   margin: 0;
   padding: 40px 20px;
+}
+@media only screen and (max-width: 991px) {
+  .requirements ul {
+    width: auto;
+    float: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .requirements ul {
+    padding: 20px 0;
+  }
 }
 .requirements li.empty {
   shape-outside: polygon(0 0, 0 200px, 200px 300px);
@@ -1079,7 +1226,25 @@ input[name=select-face] {
   color: white;
   background: red;
 }
+@media only screen and (max-width: 575px) {
+  .requirements li span {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
 
+@media (max-width: 1300px) {
+  .requirements li.empty {
+    shape-outside: none;
+    width: 0;
+    height: 0;
+    float: right;
+  }
+  .requirements .li {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
 @media (max-width: 1300px) {
   .requirements li.empty {
     shape-outside: none;
@@ -1124,10 +1289,10 @@ h2 {
 h2:after {
   width: 100%;
   position: absolute;
-  left: -4px;
+  left: -2px;
   top: -2px;
-  color: #f43838;
   mix-blend-mode: multiply;
+  white-space: pre-wrap;
 }
 @media only screen and (max-width: 575px) {
   h2:after {
@@ -1137,11 +1302,11 @@ h2:after {
 }
 h2:before {
   position: absolute;
-  top: -4px;
-  left: -2px;
+  top: -5px;
+  left: -5px;
   color: #10a9df;
-  white-space: nowrap;
   mix-blend-mode: multiply;
+  white-space: pre-wrap;
 }
 
 .loader {
