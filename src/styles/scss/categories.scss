@@ -128,19 +128,13 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-height: 550px) {
+  .categories {
+    height: auto;
+    padding: 30px;
+  }
 
-  // .categories__red-figure {
-  //   transform: rotate(90deg);
-  // }
-
-  // .categories__blue-figure {
-  //   transform: rotate(-90deg);
-  // }
-}
-
-@media (max-width: 800px) {
-  .categories__red-figure {
-    transform: rotate(90deg);
+  .categories__body {
+    padding: 30px 0 150px 0;
   }
 }

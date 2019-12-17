@@ -64,10 +64,6 @@ input[name="select-face"] {
   .memories {
     flex-direction: column;
   }
-
-  .memories__cube {
-    // padding: 80px;
-  }
 }
 
 @media (max-width: 900px) {
@@ -79,5 +75,15 @@ input[name="select-face"] {
 @media (max-width: 600px) {
   .cube {
     zoom: 50%;
+  }
+}
+
+@media (max-height: 600px) {
+  .memories {
+    height: auto;
+  }
+
+  .cube {
+    zoom: 100%;
   }
 }

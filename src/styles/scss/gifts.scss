@@ -123,3 +123,9 @@
   right: 0px;
   z-index: -999;
 }
+
+@media (max-width: 1920px) and (min-width: 1700px) {
+  .gifts {
+    padding: 130px 170px;
+  }
+}

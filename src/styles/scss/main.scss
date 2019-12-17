@@ -180,5 +180,8 @@ a.main__registration {
   // }
 }
 
-@media (max-width: 800px) {
+@media (max-height: 500px) {
+  .main {
+    height: auto;
+  }
 }

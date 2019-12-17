@@ -34,6 +34,11 @@
     margin: 0;
     padding: 40px 20px;
 
+    li {
+
+      list-style-image: url(../images/list-element-img.png);
+    }
+
     @include for-mobile-and-tablet {
       width: auto;
       float: none;
@@ -47,7 +52,7 @@
   li.empty {
     shape-outside: polygon(0 0, 0 200px, 200px 300px);
     width: 300px;
-    height: 200px;
+    height: 250px;
     float: left;
     list-style: none;
   }
@@ -98,5 +103,11 @@
       margin: 20px 0;
       width: 100%;
     }
+  }
+}
+
+@media (max-height: 550px) {
+  .requirements {
+    height: auto;
   }
 }
