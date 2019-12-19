@@ -50,12 +50,8 @@ h2 {
     mix-blend-mode: multiply;
     white-space: pre-wrap;
 
-    @include for-mobile(){
-      left: -2px;
-      top: -2px;
-    }
   }
-
+  
   &:before {
     position: absolute;
     top: -5px;
@@ -63,6 +59,11 @@ h2 {
     color: #10a9df;
     mix-blend-mode: multiply;
     white-space: pre-wrap;
+    
+    @include for-mobile-and-tablet {
+      left: -4px;
+      top: -4px;
+    }
   }
 }
 

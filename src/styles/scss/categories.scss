@@ -14,9 +14,14 @@
 
 .categories__header h2 {
   color: #ffffff;
-  text-shadow: #62e3ff -5px -5px 2px, #ffb4b4 5px 5px 2px;
+  text-shadow: #f43838 -5px -5px 2px, #10a9df 5px 5px 2px;
   margin: 0;
   padding: 0 10%;
+
+  @include for-mobile-and-tablet {
+    text-shadow: #f43838 -3px -3px 2px, #10a9df 3px 3px 2px;
+  }
+  
 }
 
 .categories__header {
@@ -24,6 +29,10 @@
   font-weight: bold;
   display: flex;
   width: 100%;
+
+  @include for-mobile {
+    padding: 5px;
+  }
 }
 
 .categories__body {
