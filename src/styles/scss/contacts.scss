@@ -80,8 +80,13 @@
     text-align: center;
     color: #ffffff;
     margin: 5px 0;
+
+    a{
+      color: #ffffff;
+    }
   }
 }
+
 
 @media (max-width: 1600px) {
   .contacts__body {
