@@ -1,0 +1,31 @@
+.promo__body iframe {
+  width: 920px;
+  height: 600px;
+}
+
+.promo {
+  padding-bottom: 100px;
+
+  @include for-mobile-and-tablet {
+    padding-bottom: 100px;
+  }
+
+  @include for-mobile-and-sm-tablet {
+    padding-bottom: 50px;
+  }
+}
+
+.promo__body iframe {
+  @include for-mobile-and-tablet {
+    width: 550px;
+    height: 380px;
+  }
+  @include for-mobile-and-sm-tablet {
+    width: 410px;
+    height: 320px;
+  }
+  @include for-mobile {
+    width: 340px;
+    height: 280px;
+  }
+}

@@ -9,6 +9,7 @@
 @import "memories";
 @import "partners";
 @import "gifts";
+@import "promo";
 @import "place";
 @import "slider";
 @import "requirements";
@@ -28,6 +29,7 @@ body {
 }
 img {
   width: 100%;
+  height: auto;
 }
 
 h2 {
