@@ -23,17 +23,26 @@ function describeArc(x, y, radius, startAngle, endAngle) {
 }
 
 function getTimeRemaining(endtime) {
-	var t = Date.parse(endtime) - Date.parse(new Date());
-	var seconds = Math.floor((t / 1000) % 60);
-	var minutes = Math.floor((t / 1000 / 60) % 60);
-	var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-	var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var time = {};
+  if (t > 0) {
+    time.seconds = Math.floor((t / 1000) % 60);
+    time.minutes = Math.floor((t / 1000 / 60) % 60);
+    time.hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    time.days = Math.floor(t / (1000 * 60 * 60 * 24));
+  } else 
+  {
+    time.seconds = 0;
+    time.minutes = 0;
+    time.hours = 0;
+    time.days = 0;
+  }
 	return {
 		'total': t,
-		'days': days,
-		'hours': hours,
-		'minutes': minutes,
-		'seconds': seconds
+		'days': time.days,
+		'hours': time.hours,
+		'minutes': time.minutes,
+		'seconds': time.seconds
 	};
 }
 
